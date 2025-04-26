@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos de aprendizaje</title>
+    <link rel="stylesheet" href="Cursos/CSS/Cursos.css">
+    <link rel="stylesheet" href="Cursos/CSS/Anuncios.css">
+    <link rel="stylesheet" href="Cursos/CSS/Traductor.css">
+    <link rel="stylesheet" href="Cursos/CSS/Hover.css">
+    <link rel="stylesheet" href="Cursos/CSS/Scroll.css">
+    <link rel="stylesheet" href="Cursos/CSS/Media-Queries.css">
+    <script src="Cursos/JS/Cursos.js" defer></script> <!-- El atributo "defer" es igual  equivale a poner al final del "body" la llamada al archivo JavaScript. -->
+    <!-- Carga la API de Google Translate y llama a la función googleTranslateElementInit() cuando esté lista. -->
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link rel="icon" href="Cursos/Imágenes/Cursos.png">
+</head>
+<body>
+    <div class="Anuncio1">Anuncio1</div>
+    <div class="Anuncio2">Anuncio2</div>
+    <div class="Anuncio3">Anuncio3</div>    
+    <header>
+        <h1>Bienvenido a la biblioteca del conocimiento</h1>
+    </header>
+    <main>
+        <section class="Interaccion">
+            <div id="Hamburguesa"><img src="Cursos/Imágenes/Hamburguesa.png" alt="Menú Hamburguesa"></div>
+            <div id="GoogleTranslate"></div> <!-- Aquí aparece el widget de Google. -->
+        </section>
+        <h3>👇 Seleccione el tema que quiera adquirir 👇</h3>
+        <section class="Cursos">
+            <a class="Tarjeta" id="Ajedrez" href="Deporte/Ajedrez.html" target="_blank">
+                <img src="Cursos/Imágenes/Ajedrez.png" alt="Ajedrez">
+                <p>Ajedrez</p>
+            </a>
+            <a class="Tarjeta" id="Astronomía" href="Física/Astronomía.html" target="_blank">
+                <img src="Cursos/Imágenes/Universo.png" alt="Astronomía">
+                <p>Astronomía</p>
+            </a>
+            <a class="Tarjeta" id="Inversiones" href="Inversiones/CoinShop.html" target="_blank">
+                <img src="Cursos/Imágenes/Logo.png" alt="CoinShop">
+                <p>Inversiones</p>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <nav  class="Cierre">
+            <br>
+            <p>Realizado por Rodrigo López Pérez Para Lenguajes de marcas y sistemas de gestión de información (LND) - 1º CFGS - DAM - IES Haría - 2024-2025</p>
+            <h3>Enlace a mi repositorio 'GitHub' de la página: <a class="Enlace" href="https://github.com/Rodrigo-cyber17/Proyecto-Final.git" target="_blank">Rodrigo-cyber17</a></h3>    
+        </nav>
+    </footer>
+</body>
+</html>

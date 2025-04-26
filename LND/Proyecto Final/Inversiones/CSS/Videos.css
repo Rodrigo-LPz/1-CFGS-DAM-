@@ -1,0 +1,27 @@
+.Inicio{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para mejorar legibilidad */
+}
+video{
+    width: auto;
+    height: auto;
+    /* Sirve para que un elemento concreto del HTML se comporte como un único bloque. */
+    display: block;
+    /* Recorta el video si es necesario para cubrir el área, realiza la misma función que el "overflow: hidden" pero para imágenes y vídeos. */
+    object-fit: cover;
+    /* Fijamos el video al viewport, es decir, a la parte visible de la página. */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    /* Centra y escala para cubrir toda la pantalla, puede parecer que no es necesario tanto el top como el left puestos arriba, pero esta línea lo que hace es corregir el desajuste al moverlo para que se quede perfectamente centrado. */
+    transform: translate(-50%, -50%) scale(1.2);
+    /* Mejorar el rendimiento en el desplazamiento. */
+    will-change: transform;
+    z-index: -2;
+}

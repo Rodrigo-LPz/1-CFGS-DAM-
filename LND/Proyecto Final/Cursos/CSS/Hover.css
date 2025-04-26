@@ -1,0 +1,109 @@
+/* ":hover" es una pseudo-clase que se aplica cuando el usuario coloca el cursor sobre un elemento. */
+/* ": :before" es un pseudo-elemento que permite insertar contenido antes de que el propio contenido real de un elemento se haya puesto, es decir, es como unos ajustes que se establecen como predeterminados al crear el elemento/objeto. */
+/* ": ::after" es otro pseudo-elemento similar al ": :before", pero este que permite insertar contenido después de que el propio contenido real de un elemento se haya puesto, es decir, es como unos ajustes que se establecen como predeterminados tras crear el elemento/objeto. */
+
+
+
+/* Animación para el degradado */
+@keyframes rotateGradient{
+    from { --transform: 0deg; }
+    to { --transform: 360deg; }
+}
+/* Declaramos una propiedad personalizada para "transform", esta variable representará un ángulo en grados. */
+@property --transform{ /* "--" es una convención/herramienta obligatoria en "css" para definir propiedades personalizadas, es decir, se utiliza para definir variables. */
+    /* Especificamos que el valor debe ser en ángulos (deg). */
+    syntax: "<angle>";
+    /* Los elementos hijos heredarán este valor, si no se redefine */
+    inherits: true;
+    /* El valor inicial de la variable "--transform" es 0 grados (sin rotación) */
+    initial-value: 0deg;
+}
+
+
+/* Activa todas las animaciones de este archivo. (Esto podría ponerlo en el css "Cursos.css" y lo del hover aquí, pero de esta forma es mucho más entendible) */
+.Tarjeta{
+    position: relative;
+    overflow: hidden; /* Se utiliza para que el pseudo-elemento (::before) no sobresalga, es decir, la transición de llenado se realice dentro de la tarjeta*/
+    /* Añade una transición suave para la transformación/transición de ensanchamiento del elemento. */
+    transition: transform 1s;
+    z-index: 1; /* [Lo ponemos con valor (1), en vez de (0) para aseguarnos que la tarjeta y todos sus elementos no queden opacados, por debajo de otro objeto]. */
+}
+/* Animación interactiva al poner el cursor encima para "Tareta". */
+.Tarjeta:hover{
+    /* Aumentamos el tamñao del elemento al 110% de su tamaño original. */
+    transform: scale(1.1);
+    border: 6px solid black;
+    box-shadow: 0px 0px 10px 5px black;
+    z-index: 2; /*(Lo ponemos para asegurarnosde que, cuando el cursor esté encima de "Tarjeta", todo el contenido de la tarjeta se mantenga por encima del fondo animado). */
+    margin: 0px 15px 0px 15px;
+    cursor: pointer;
+}
+/* Animación interactiva al poner el cursor encima para "GoogleTranslate". */
+#GoogleTranslate:hover{
+    transform: scale(1.1);
+    border-radius: 17%;
+    box-shadow: 0px 0px 10px 5px black;
+}
+/* Animación interactiva al poner el cursor encima para "Tareta". Pero para el elemento "p", alojado dentro de "Tarjeta". */
+.Tarjeta:hover p{
+    color: white;
+}
+/* Animación para "Tareta". */
+.Tarjeta::before{
+    /* Añade una transición suave para la transformación/transición de llenado del elemento. */
+    transition: height 1s ease-in-out;
+    /* Crea un estilo o hace que la animación tenga un estilo giratorio. */
+    animation: rotateGradient 7s linear infinite; /* "rotateGradient" se usa para hacer que la animación gire constantemente. */
+    /* Crea el espacio para crear el efecto visual. (Si no se pone no se vería) */
+    content: "";
+    /* Se posiciona la animación sobre todo el contenido de "Tarjeta". (Si no se pone se crearía una nueva caja dentro de "Tarjeta donde posicionar la animación")*/
+    position: absolute;
+    width: 100%;
+    /* Para que el posicionamiento de la animación comience sin altura. (Si no se pone la animación no tendría ese movimiento de llenado, porque estaría con la altura de la "Tarjeta" desde el principio) */
+    height: 0;
+    /* Para que el posicionamiento de la animación esté alineado con el borde izquierdo de la "Tarjeta". */
+    left: 0;
+    /* Para que el posicionamiento de la animación esté alineado con con el borde inferior de la "Tarjeta". (Si no se pone la animación iriía del centro hacia los bordes superior e inferior). */
+    bottom: 0;
+    z-index: -1 /* (Lo ponemos con un valor negativo para que la animación se ponga por debajo de todos los elementos de la "Tarjeta"). */
+}
+/* (Separamos el color de fondo del resto del pseudo-elemento (::before) para aplicar la gama de colores apropiada a cada tarjeta) Animación para los fondos de color de "Tareta". */
+#Ajedrez::before{
+    /* Creamos un fondo de color con un degradado cónico de tonalidades rosas/moradas (Es un tipo de degradado que crea una transición suave entre colores alrededor de un punto central). */
+    background: conic-gradient(from var(--transform), gold, #c9a227, #7a5c1e, black); /* "from var(--transform)" declara un angulo de inicio para el degradado, este angulo vendrá definido por el valor de la variable "--transform" (0 grados) y el angulo final es 360 grados. */
+}
+#Astronomía::before{
+    background: conic-gradient(from var(--transform), #8A2BE2, #4B0082, #1E1B4B, #000000); /* "from var(--transform)" declara un angulo de inicio para el degradado, este angulo vendrá definido por el valor de la variable "--transform" (0 grados) y el angulo final es 360 grados. */
+}
+#Inversiones::before{
+    background: conic-gradient(from var(--transform), #34D399, #059669, #065F46, #023020); /* "from var(--transform)" declara un angulo de inicio para el degradado, este angulo vendrá definido por el valor de la variable "--transform" (0 grados) y el angulo final es 360 grados. */
+}
+/* Hace que la animación tenga un estilo de llenado tras posicionar el cursor encima. */
+.Tarjeta:hover::before{
+    /* Se llena de abajo hacia arriba. */
+    height: 100%;
+}
+footer a:hover{
+    font-weight: 700;
+}
+/* Animación para hacer negrita "a". */
+footer a{
+    /* Posiciona la línea sobre "a" */
+    position: relative;
+}
+/* Animación para crear la animación de subrayado para "a". */
+footer a::after{
+    /* Añade una transición suave para la apariciób de la línea. */
+    transition: width 1s ease-in-out;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor; /* "CurrentColor" toma el color actua del texto/elemento con el que se esté trabando, en ese caso de "a". */
+}
+/* Hace que la animación tenga un estilo de llenado tras posicionar el cursor encima. */
+footer a:hover::after{
+    width: 100%;
+}

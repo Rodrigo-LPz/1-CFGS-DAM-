@@ -1,0 +1,105 @@
+@keyframes OrbitaEliptica{
+    0% {
+        transform: rotate(0deg) translateX(18em) translateY(0);
+    }
+    50% {
+        transform: rotate(180deg) translateX(14em) translateY(14em); /* Afelio */
+    }
+    100% {
+        transform: rotate(360deg) translateX(18em) translateY(0); /* Perihelio */
+    }
+}
+@keyframes OrbitaLunaEliptica{
+    0% {
+        transform: rotate(0deg) translateX(5em) translateY(0);
+    }
+    50% {
+        transform: rotate(180deg) translateX(4em) translateY(4em); /* Perihelio */
+    }
+    100% {
+        transform: rotate(360deg) translateX(5em) translateY(0); /* Afelio */
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /*Oculta el contenido que se desborda del contenedor, es decir, oculta el contenido sobranteque se salga del "body"*/
+    height: 100vh;
+    background-color: black;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+}
+.Sistema {
+    position: relative;
+    height: 40em;
+    width: 40em;
+    font-size: 0.625em;
+}
+.Sol {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 12em;
+    width: 12em;
+    border-radius: 50%;
+    background-color: #FFCC00;
+    box-shadow: 0px 0px 48px white;
+    transform: translate(-50%, -50%); /* Centra el Sol en el sistema */
+    z-index: 2;
+}
+.Tierra, .Luna{
+    position: absolute;
+    border-style: solid;
+    border-color: white
+        transparent transparent transparent;
+    border-width: 0.1em 0.1em 0px 0px;
+    border-radius: 50%;
+}
+.Tierra{
+    top: -7em;
+    left: -7em;
+    height: 32em;
+    width: 32em;
+    animation: OrbitaEliptica 10s linear infinite;
+    transform-origin: center;
+}
+.Luna{
+    position: absolute;
+    top: 0em;
+    right: 0em;
+    height: 10em;
+    width: 10em;
+    animation: OrbitaLunaEliptica 3s linear infinite;
+}
+.Tierra::before, .Luna::before{
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+}
+.Tierra::before{
+    top: 3em;
+    right: 3em;
+    height: 3.2em;
+    width: 3.2em;
+    background-color: #00BFFF;
+}
+.Luna::before{
+    top: 1em;
+    right: 0.4em;
+    height: 1.2em;
+    width: 1.2em;
+    background-color: silver;
+}

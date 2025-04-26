@@ -1,0 +1,23 @@
+/* Hace que la redirección a los distintos apartados de la página no se haga de forma repentina, sino con una transición suave y lenta. */
+html{
+    scroll-behavior: smooth;
+}
+/* Oculta la barra de desplazamiento pero mantiene el desplazamiento funcional. */
+::-webkit-scrollbar{
+    width: 7px;
+    background: transparent;
+}
+/* Oculta el "track" de la scrollbar */
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+/* Oculta o hace transparente el "thumb" (el control deslizante) */
+::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+/* Animación al pasar el cursor por encima de la barra, "bar" o "scrollbar" */
+::-webkit-scrollbar-thumb:hover{
+    background: #357ae8;
+    transition: background 1s ease-in-out;
+}

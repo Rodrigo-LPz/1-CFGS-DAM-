@@ -1,0 +1,63 @@
+/* Muestro del segundo, tercer y cuarto nivel del menú. */
+.Menu > ul > li:hover .Submenu,
+.Submenu > li:hover > .Submenu2,
+.Submenu > li:hover > .Submenu2_2,
+.Submenu2_2 > li:hover > .Submenu3,
+.Submenu2_2 > li:hover > .Submenu3_2{
+    /* Aparición de los elementos, de la interacción al pasar el cursor sobre las listas */
+    display: block;
+    transition: opacity 3s ease;
+    opacity: 1;
+}
+.Menu > ul > li:hover .Submenu{
+    width: 270px;
+}
+.Menu a:hover{
+    transition: 0.7s ease;
+    /* Degradado lineal de color. */
+    background: linear-gradient(90deg, #00EC96, #0078FF);
+    /* Poneos el texto transparente, ya que el color por el que será reemplazado será el degradado. */
+    color: transparent;
+    /* Asegura que el fondo afecte solo al texto. */
+    -webkit-background-clip: text;
+        background-clip: text; /*Acompañamos la línea anterior con esta, sirve para asegurar compatibilidad con navegadores. */
+    font-size: 1.7rem;
+}
+/* Estancamiento/Bloqueo del estilo del "hover" para los padres tras desplegar un submenu hijo. */
+.Menu > ul > li:hover > a,
+.Submenu > li:hover > a,
+.Submenu2 > li:hover > a,
+.Submenu2_2 > li:hover > a,
+.Submenu3 > li:hover > a,
+.Submenu3_2 > li:hover > a{
+    transition: 0.7s ease;
+    background: linear-gradient(90deg, #00EC96, #0078FF);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 1.7rem;
+}
+
+.Indice li:hover{
+    font-size: 1.9rem;
+}
+.Submenu a:hover::after{
+    content: " <";
+}
+.Submenu a::after {
+    content: " >";
+}
+/* Excluir los corchetes en hover también para las Submenu3 y Submenu3_2 */
+.Submenu3 a:hover::after,
+.Submenu3_2 a:hover::after{
+    content: "";
+}
+.Submenu3 a::after,
+.Submenu3_2 a::after{
+    content: "";
+}
+.Destacados article a:hover{
+    font-weight: 900;
+    background: #004997;
+    transition: background 1.7s;
+}

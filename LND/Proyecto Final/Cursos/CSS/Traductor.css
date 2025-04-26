@@ -1,0 +1,58 @@
+/* Esto es para el traductor. */
+
+/* Modificar el contenedor del traductor. */
+#GoogleTranslate{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Forzar estilos en el botón del widget de Google. */
+.goog-te-gadget-simple{
+    background-color: white !important; /* El atributo "!important" se usa para dar máxima prioridad a una regla de estilo. */
+    padding: 7px !important;
+    font-size: 20px !important;
+    border: 2.5px solid black !important;
+    border-radius: 17% !important;
+    cursor: pointer !important; /* Esto sirve para cambiar el cursor a una mano apuntando cuando se pasa el ratón sobre el botón. */
+}
+/* Para cambiar el color del texto del traductor. */
+.goog-te-gadget-simple span{
+    color: black !important;
+}
+/* Para ocultar el icono de Google del traductor. */
+.goog-te-gadget-icon{
+    display: none !important;
+}
+/* Para ocultar las imágenes del traductor. */
+.goog-te-gadget img {
+    display: none !important;
+}
+/* Para ajustar el menú desplegable. */
+.goog-te-combo{
+    background-color: white !important;
+    font-size: 14px !important;
+    padding: 5px !important;
+    border: 2px solid black !important;
+    border-radius: 5px !important;
+}
+/* Para ajustar la posición del menú desplegable. */
+.goog-te-menu-frame{
+    position: absolute !important;
+    top: 35px !important;
+    right: 0px !important;
+    z-index: 100 !important; /* Asegurar que esté por encima de otros elementos. */
+    width: 100% !important;
+    max-width: 250px !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+/* Para los elementos alojados dentro del menú desplegable. */
+.goog-te-menu2 *{
+    background: none !important;
+    font-size: 14px !important;
+    color: black !important;
+}

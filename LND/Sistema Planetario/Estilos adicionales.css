@@ -1,0 +1,80 @@
+/*Estilos/Colores de reserva opcionales*/
+
+
+
+
+/*Estilo (animación) "body" 2*/
+@keyframes Estrellas{
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+body::before{
+    animation: Estrellas 1.5s linear infinite; /*Dentro del "body::before"*/
+}
+
+
+/*Estilo "body" 3*/
+body{
+    /*Colores de reserva adicionales/opcionales*/
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(20,20,20,1) 100%);
+}
+
+
+/*Estilo "Sol" 2*/
+@keyframes Resplandor{
+    0%{
+        box-shadow: 0px 0px 48px rgba(255, 204, 0, 0.8), 0px 0px 100px rgba(255, 165, 0, 0.7);
+    }100% {
+        box-shadow: 0px 0px 80px rgba(255, 204, 0, 1), 0px 0px 150px rgba(255, 165, 0, 0.9);
+    }
+}
+.Sol{
+    position: absolute;
+    top: 17em;
+    left: 17em;
+    height: 12em;
+    width: 12em;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 204, 0, 1) 0%, rgba(255, 165, 0, 0.8) 50%, rgba(255, 0, 0, 0) 100%);
+    box-shadow: 0px 0px 48px rgba(255, 204, 0, 0.8), 0px 0px 100px rgba(255, 165, 0, 0.7);
+    animation: Resplandor 2s infinite alternate;
+}
+
+
+/*Estilo "Sol" 3*/
+.Sol{
+    background-color: yellow;
+        /*box-shadow: 0 0 20px 10px rgb(255, 204, 0);*/
+}
+
+
+/*Estilo "Sol" 4*/
+.Sol{
+    background-color: #FF9900;
+        /*box-shadow: 0 0 20px 10px rgb(255, 204, 0);*/
+}
+
+
+/*Estilo (Iluminación/sombra) "Sol" 5*/
+.Sol{
+    box-shadow: 0 0 20px 10px rgb(255, 204, 0);
+}
+
+
+/*Estilo "Tierra" 2*/
+.Tierra::before{
+    background-color: aqua;
+}
+
+
+/*Estilo "Luna" 2*/
+.Luna::before{
+    background-color: #D3D3D3;
+}
+
+
+/*Estilo "Luna" 2*/
+.Luna::before{
+    background-color: #C0C0C0;
+}

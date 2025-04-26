@@ -1,0 +1,45 @@
+/* Para "Cusos(traductor)". */
+/* Forzar estilos en el botón del widget de Google */
+.goog-te-gadget-simple{
+    background-color: transparent !important; /* el atributo "!important" se usa para dar máxima prioridad a una regla de estilo*/
+    border: none !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    color: black !important;
+}
+
+
+/* Para "Cusos(hover)". */
+/* Animación interactiva al poner el cursor encima para "Tareta". */
+.Tarjeta:hover{
+    /* Aumentamos el tamñao del elemento al 110% de su tamaño original. */
+    transform: scale(1.1);
+    border: 30px solid black;
+    box-shadow: 0px 0px 10px 5px black;
+    z-index: 2; /*(Lo ponemos para asegurarnosde que, cuando el cursor esté encima de "Tarjeta", todo el contenido de la tarjeta se mantenga por encima del fondo animado). */
+    cursor: pointer;
+}
+
+
+/* Para "Cusos(hover)". */
+/* Animación interactiva al poner el cursor encima para "Tareta". */
+.Tarjeta:hover{
+    /* Aumentamos el tamñao del elemento al 110% de su tamaño original. */
+    transform: scale(1.1);
+    border: 30px solid black;
+    box-shadow: 0px 0px 10px 5px black;
+    z-index: 2; /*(Lo ponemos para asegurarnosde que, cuando el cursor esté encima de "Tarjeta", todo el contenido de la tarjeta se mantenga por encima del fondo animado). */
+    cursor: pointer;
+}
+
+
+/* Para "Cusos(hover)". */
+#Astronomía::before{
+    background: conic-gradient(from var(--transform), indigo, purple, hotpink); /* "from var(--transform)" declara un angulo de inicio para el degradado, este angulo vendrá definido por el valor de la variable "--transform" (0 grados) y el angulo final es 360 grados. */
+}
+
+
+/* Para "Cusos(hover)". */
+#Inversiones::before{
+    background: conic-gradient(from var(--transform), #4CAF50, #2E8B57, #1B4F72, #0D1B2A); /* "from var(--transform)" declara un angulo de inicio para el degradado, este angulo vendrá definido por el valor de la variable "--transform" (0 grados) y el angulo final es 360 grados. */
+}

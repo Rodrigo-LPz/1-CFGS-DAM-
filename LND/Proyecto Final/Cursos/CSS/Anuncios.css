@@ -1,0 +1,34 @@
+/* Estilos para todas las ventanas de anunciantes. */
+.Anuncio1, .Anuncio2, .Anuncio3{
+    /* Para que no siga las reglas del tamaño para el posicionamiento DE 1000px máximo. */
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    background-color: lightgray;
+    border: 2px solid black;
+}
+/* Posicionamiento de la ventana izquierda (Anuncio1). */
+.Anuncio1{
+    top: 100px;
+    left: 20px;
+    width: 200px;
+    height: 550px;
+}
+/* Posicionamiento de la ventana derecha (Anuncio2). */
+.Anuncio2{
+    top: 80px; /* Lo pongo porque considero que es necesario, no quiero que las ventanas de los cursos y la de los anuncios no estén a la misma altura. */
+    right: 20px;
+    width: 180px;
+    height: 250px;
+}
+/* Posicionamiento de la ventana derecha 2 (Anuncio3). */
+.Anuncio3{
+    top: 350px;
+    right: 20px;
+    width: 180px;
+    height: 330px;
+}
