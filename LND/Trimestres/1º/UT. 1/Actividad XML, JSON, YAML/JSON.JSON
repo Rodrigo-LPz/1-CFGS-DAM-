@@ -1,0 +1,35 @@
+[
+    {
+        "categoria": "Portátil",
+        "marca": "MSI",
+        "modelo": "MSI thin 15 B12uC-1839XES",
+        "color": "Negro",
+        "procesador": "Intel Core I7",
+        "memoriaRAM": "16GB RAM",
+        "almacenamiento": "1 TB SSD",
+        "tarjetagrafica": "Geforce RTX 3050",
+        "sistemaoperaivo": "Sin sistema operativo"
+    },
+    {
+        "categoria": "Portátil",
+        "marca": "Asus",
+        "modelo": "Rog Strix G16 G614JI-N4081",
+        "color": "Gris",
+        "procesador": "Intel Core i7-13650HX",
+        "memoriaRAM": "32GB",
+        "almacenamiento": "1 TB SSD",
+        "tarjetagrafica": "RTX 4070",
+        "sistemaoperaivo": "Sin sistema operativo"
+    },
+    {
+        "categoria": "Portátil",
+        "marca": "Apple",
+        "modelo": "MacBook Air Apple M3",
+        "color": "Negro",
+        "procesador": "Intel Core I7",
+        "memoriaRAM": "16GB RAM",
+        "almacenamiento": "1 TB SSD",
+        "tarjetagrafica": "Geforce RTX 3050",
+        "sistemaoperaivo": "Sin sistema operativo"
+    }
+]

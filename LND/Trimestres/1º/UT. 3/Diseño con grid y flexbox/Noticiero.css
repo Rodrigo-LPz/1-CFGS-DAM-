@@ -1,0 +1,93 @@
+/*Reseteo y reinicio de márgenes y bordes para la página completa*/
+*{
+    margin: 0; /*Elimina los márgenes por defecto*/
+    padding: 0; /*Elimina el relleno por defecto*/
+    box-sizing: border-box; /* Incluye el padding y border en el ancho y alto de la página*/
+}
+/*Estilo aplicado al "body"*/
+body{
+    display: grid; /*Aparición de los elementos con "grid"*/
+    grid-template: /*Crear plantillas/"celdas" con ""grid"*/
+        "header"   120px /*Altura de los celdas*/
+        "main"     1fr /*Altura de los celdas*/
+        "footer"   80px / /*Altura de los celdas*/
+        1fr; /*Anchura de las ccolumnas*/
+        height: 100vh; /*Altura*/
+        background-color: rgb(184, 169, 154); /*Color de fondo*/
+}
+/*Estilo aplicado al "header"*/
+header{
+    grid-area: header; /*Llamado de la plantilla "footer"*/
+}
+/*Estilo aplicado al "main"*/
+main{
+    display: flex; /*Aparición de los elementos con "flex"*/
+    justify-content: center; /*Centrar texto*/
+    margin: 30px; /*Añade un margen*/
+}
+/*Estilo aplicado al "section"*/
+section{
+    width: 1000px; /*Establece un ancho al "section"*/
+    height: 600px; /*Establece una altura al "section"*/
+    grid-area: main; /*Llamado de la plantilla "main"*/
+    display: grid; /*Aparición de los elementos con "grid"*/
+    grid-template: /*Crear plantillas/"celdas" con ""grid"*/
+        "Columna1 Columna1 Columna3 Columna4" 1fr /*Altura de los celdas*/
+        "Columna5 Columna6 Columna7 Columna8" 1fr / /*Altura de los celdas*/
+         1fr      1fr      1fr      1fr; /*Anchra para cada celda*/
+    gap: 10px; /*Espacio entre celdas*/
+}
+/*Estilo aplicado a los "article"*/
+article{
+    display: grid; /*Aparición de los elementos con "grid"*/
+    grid-template: /*Crear plantillas/"celdas" con ""grid"*/
+        "Fila1" 150px /*Altura de los celdas*/
+        "Fila2" 50px /*Altura de los celdas*/
+        "Fila3" 1fr  /*Altura de los celdas*/
+        "Fila4" 25px / /*Altura de los celdas*/
+         1fr; /*Anchra para cada celda*/
+    background-color: rgb(238, 238, 238); /*Color de fondo*/
+    border-radius: 20px; /*Añade un radio/borde redondeado*/
+}
+/*Estilo aplicado al primer hijo del "section"*/
+article:nth-child(1){
+    grid-area: Columna1; /*Llamado de la plantilla "Izquierdo", hijo 1 de la plantilla "main"*/
+}
+/*Estilo aplicado a los "footer"*/
+footer{
+    grid-area: footer; /*Llamado de la plantilla "footer"*/
+}
+/*Estilo aplicado al "h1"*/
+h1{
+    margin: 50px; /*Añade un margen*/
+    font-size: 35px; /*Añade/Modifica el tamaño del texto*/
+    text-align: center; /*Centrar texto*/
+    font-family: "Helvetica Neue", "Helvetica", "sans-serif", "roboto", "Arial"; /*Añade una fuente/estilo al texto*/
+    color: black; /*Color*/
+}
+h3{
+    margin: 10px; /*Añade un margen*/
+    font-size: 14px; /*Añade/Modifica el tamaño del texto*/
+    text-align: center; /*Centrar texto*/
+    font-family: "roboto", "sans-serif", "arial"; /*Añade una fuente/estilo al texto*/
+    color: black; /*Color*/
+}
+h6{
+    margin: 15px; /*Añade un margen*/
+    font-size: 15px; /*Añade/Modifica el tamaño del texto*/
+    font-family: "roboto", "sans-serif", "arial"; /*Añade una fuente/estilo al texto*/
+    color: black; /*Color*/
+}
+/*Estilo aplicado al "img"*/
+img{
+    width: 100%; /*Establece un ancho a la imagen*/
+    height: 100%; /*Establece una altura a la imagen*/
+    border-radius: 20px; /*Añade un radio/borde redondeado*/
+}
+/*Estilo aplicado al "p"*/
+p{
+    margin: 5px; /*Añade un margen*/
+    font-size: 12px; /*Añade/Modifica el tamaño del texto*/
+    font-family: "Arial", "sans-serif", "roboto"; /*Añade una fuente/estilo al texto*/
+    color: black; /*Color*/
+}
