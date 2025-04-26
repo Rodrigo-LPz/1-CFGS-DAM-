@@ -1,0 +1,24 @@
+agenda_apellidos_nombre.txt
+1	Aragón Zúñiga		Armando
+2	de Campos Sánchez	José María
+3	García García		Romeo
+4	García López		Marco
+5	Guadalupe Guadalupe	Carlos
+6	González Madrid		Raúl
+7	López Gutiérrez		Juan Carlos
+8	López Serrano		María
+9	Sanz Pérez		Airam
+10	Tomás del Castillo	Zaira
+
+
+agenda_ciudad.txt
+1	Barcelona
+2	Cádiz
+3	León
+4	Madrid
+5	Madrid
+6	Madrid
+7	Santa Cruz de Tenerife
+8	Segovia
+9	Teruel
+10	Toledo
