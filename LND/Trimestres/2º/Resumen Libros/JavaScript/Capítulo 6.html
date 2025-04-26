@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/Capítulos.css">
+    <title>Capítulo 6 - JS</title>
+    <link rel="icon" href="Imágenes/Logo JavaScript.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header>
+        <a href="Capítulo 5.html"><i class="fa-solid fa-arrow-left fa-2xl" style="color: #000000;"></i></a>
+        <a class="Titulo" href="Libro.html"><h1>Capítulo 6</h1></a>
+        <a href="Capítulo 7.html"><i class="fa-solid fa-arrow-right fa-2xl" style="color: #000000;"></i></a>
+    </header>
+    <main>
+        <h2>Capítulo 6 - Sentencias de control de flujo</h2>
+        <ol>
+            <li><a href="#Introducción">Introducción</a></li>
+            <li><a href="#Tipos">Tipos</a></li>
+        </ol>
+        <section class="Resumen">
+            <p id="Introducción">Hasta el momento, en los ejemplos vistos hemos visto la ejecución de sentencias las cuales seguían un orden, el escrito; a esto se lo conoce como <strong>flujo de programa</strong>. Sin embargo, este flujo esta muy limitado, pues no permite crear programas donde el número de iteraciones fuese desconocido y en casos de gran tediosidad si fuese el caso de repetir el mismo código muchas veces.<br><br>De esta forma vemos como surgue la necesidad por controlar dicho <strong>flujo de ejecución</strong> para las necesidades del momento de ejecución del programa. Para ello, como solución haremos uso de las sentencias conocidas como <strong>sentencias condicionales e iterativas</strong>.</p>
+            <p id="Tipos">JavaScript nos ofrece la oportunidad de usar las siguientes sentencias:</p>
+                <ul>
+                    <li><p><strong>Sentencias condicionales</strong></p></li>
+                        <ul>
+                            <li><p>(<strong>if ... else</strong>). Ejecutará una u otra sentencia, estas dependerán de si cumplen o no la condición a la que se le impuso. Dentro de este tipo de condicionales exiten tres tipos:</p></li>
+                                <pre>
+
+                                    let numero = 10; // Declaramos la variable 'numero' con valor 10. La usaremos
+                                                        para los tres tipos de condicionales 'if'.
+
+
+
+                                    Ejemplo de uso de "if" (Si...):
+
+                                    if (numero > 0){ // Creamos el condicional de tipo 'if' donde asignamos la
+                                                        condición en la que si la variable 'numero' es mayor a
+                                                        0 ésta imprimirá por consola el mensaje impuesto.
+                                        console.log("El número es positivo.");
+                                    }
+                                    // mostrará El número es positivo.
+
+                                    
+                                    Ejemplo de uso de "if-else" (Si sino...):
+
+                                        if (numero % 2 === 0){ // Creamos el condicional de tipo 'if-else' donde
+                                                                  asignamos la condición en la que si el resto dado
+                                                                  entre 'numero' y '2' es igual a '0' ésta
+                                                                  imprimirá por consola el mensaje impuesto.
+                                            console.log("El número es par."); // Con la sentencia 'else' cubrimos los
+                                                                                 casos donde no se cumpla la condión
+                                                                                 escrita en el 'if', por tanto, si el
+                                                                                 resto no diese '0', imprimiría un men-
+                                                                                 saje distinto.
+                                        } else{
+                                            console.log("El número es impar.");
+                                        }
+                                    // mostrará El número es par.
+
+                                        
+                                    Ejemplo de uso de "if-else if" (Si sino si...) (Si vienes de
+                                    otros lenguajes como 'Python' lo conoceras como 'elif'):
+
+                                        if (numero < 0){ // Creamos el condicional de tipo 'if-else if' donde
+                                                            asignamos la condición en la que si la variable
+                                                            'numero' es menor a '0' ésta imprimirá por consola
+                                                            el mensaje impuesto.
+                                            console.log("El número es impar.");
+                                        } else if (numero => 0 && <= 10){ // En cambio, con la sentencia 'else if'
+                                                                             damos lugar o la oportunidad a que se
+                                                                             si la condión del primer 'if' no se cum-
+                                                                             ple, asignamos una nueva condicón distin-
+                                                                             ta a la anterior. 
+                                            console.log("El número está dentro del rango comprendido entre el
+                                            0 y el 10");
+                                        }
+                                    // mostrará El número está dentro del rango comprendido entre el 0 y el 10.
+                                    </pre>
+                            <li><p>(<strong>switch ... case</strong>). Ejecutará los grupos de sentencias asociados a ciertos valores de una expresión.</p></li>
+                                <pre>
+                                    Ejemplo de uso de 'switch' con múltiples 'case':
+
+                                        let dia = 3; // Declaramos la variable 'dia' con valor 3.
+                                        switch (dia){ // Iniciamos el bucle de tipo 'switch' con la variable
+                                                         'dia', es decir, el switch leerá el valor 3, en este
+                                                         caso. A medida que se vayan leyendo los casos o 'case',
+                                                         el valor de dicho 'case' coincidente con el de la vari-
+                                                         able, será el ejecutado.
+                                            case 1:
+                                                console.log("Hoy es lunes");
+                                                break; // La sentencia 'break' sirve para indicar que el contenido
+                                                          y sentencias del 'case' han terminado y por tanto se debe
+                                                          de detener la ejecución de 'case'.
+                                            case 2:
+                                                console.log("Hoy es martes");
+                                                break;
+                                            case 3:
+                                                console.log("Hoy es miércoles");
+                                                break;
+                                            case 4:
+                                                console.log("Hoy es jueves");
+                                                break;
+                                            case 5:
+                                                console.log("Hoy es viernes");
+                                                break;
+                                            case 6:
+                                                console.log("Hoy es sábado");
+                                                break;
+                                            case 7:
+                                                console.log("Hoy es domingo");
+                                                break;
+
+                                            default: // La sentencia 'default' sirve para cubrir el resto de casos que no han
+                                                        sido mencionadas en lo s 'case', sería similar a poner un valor por de-
+                                                        fecto en caso de que el valor de la variable 'dia' no estubiese menciona-
+                                                        da en los distintos 'case'.
+                                                console.log("Día introducido no válido");
+                                        }
+
+                                    // mostrará Hoy es miércoles
+
+                                    // Otra sentencia importante es el 'continue', esta expresión cumple una función similar al
+                                       'break', la diferencia es que este último te saca del bucle, mientras que 'continue' se
+                                       usa para salir únicamente de la iteración en curso, dando la posibilidad a que las demas
+                                       puedan seguir ejecutándose. 
+                                </pre>
+                        </ul>
+                    <li><p><strong>Sentencias de repetición</strong></p></li>
+                        <ul>
+                            <li><p>(<strong>while</strong>). Ejecutará de forma repetitiva/reiterada la sentencia o grupo de sentencias asignadas siempre que se cumpla la condición impuesta.</p></li>
+                                <pre>
+                                    Ejemplo de uso de 'while'
+
+                                        let contador = 0; // Se declara la variable 'contador' conun valor
+                                                             INICIAL de '0'.
+                                        while (contador <= 5){ // Creamos el bucle de tipo 'while' donde
+                                                                  imponemos la condión ejecutable en la
+                                                                  que dicha sentencia de repetición seguirá
+                                                                  ejecutándose o leyéndose hasta que 'conta-
+                                                                  dor' pase a tener un valor mayor a '5'.
+                                                                  Por tanto, mientras se siga cumpliendo la
+                                                                  condición el bucle irá imprimiendo el mensaje
+                                                                  e incrementándole de a uno el valor de la
+                                                                  variable 'contador'.
+                                            console.log("Número: " + contador);
+                                            contador++;
+                                        }
+                                    // mostrará Número: 0
+                                                Número: 1
+                                                Número: 2
+                                                Número: 3
+                                                Número: 4
+                                                Número: 5
+                                </pre>
+                            <li><p>(<strong>do ... while</strong>). Es similar al anterior, con la diferencia de que el bucle dará comienzo una vez han sido ejecutadas las sentencias al menos una vez.</p></li>
+                                <pre>
+                                    Ejemplo de uso de 'do-while'
+
+                                        let contador = 0;
+                                        do{ //Con la sentencia 'do' aseguramos que antes de que comience el bucle
+                                              'while' al menos la condición impuesta a la variable 'numero' sea
+                                              ignorada y se pueda ejecutar, en este caso, sin importar si 'numero'
+                                              ya tiene un valor mayor a '5'.
+                                            console.log("Número: " + contador);
+                                            contador++;
+                                        } while (contador <= 5);
+                                    // mostrará Número: 0
+                                                Número: 1
+                                                Número: 2
+                                                Número: 3
+                                                Número: 4
+                                                Número: 5
+
+                                     // La sentencia 'break', además de estar en las sentencias 'switch' y 'for',
+                                        también pueden verse siendo usadas tanto para el 'while' como 'do-while'.
+                                </pre>
+                            <li><p>(<strong>for</strong>). Aparentemente será parecido a la sentencia 'while', pero su diferenciación será que las sentencias declaras entrarán en un bucle de ejecución un número, repetición, de veces y no hasta que deje de cumplirse la condición. En tal caso, la condición aquí sería la declaración de iteraciones/repeticiones de la sentencia a realizar.</p></li>
+                                <pre>
+                                    Ejemplo de uso de 'for'
+
+                                        for (let i = 0; i <= 5; i++){ // Se declara el bucle de tipo 'for, dentro de
+                                                                         este creamos la variable 'i' con valor '0'
+                                                                         (se puede crear fuere y mencionar dentro del
+                                                                         bucle); así como el número de veces a repetirse,
+                                                                         en este caso hasta que 'i' sea mayor a '5'; y,
+                                                                         por último, imponemos qué, hasta que no se ter-
+                                                                         minen de recorrer todas las iteraciones de 'i',
+                                                                         ésta irá incrementándose de uno en uno.
+                                            console.log("Número: " + i);
+                                        }
+                                    // mostrará Número: 0
+                                                Número: 1
+                                                Número: 2
+                                                Número: 3
+                                                Número: 4
+                                                Número: 5
+                                    
+                                    // La sentencia 'break', vista en la sentencias 'switch' también puede ser usada en los 'for'
+                                    para la misma intención, forzar la salida del bucle.
+                                </pre>
+                        </ul>
+                </ul>
+        </section>
+    </main>
+    <footer>
+        <nav class="Cierre">
+            <a href="Capítulo 5.html"><i class="fa-solid fa-person-walking fa-flip-horizontal fa-2xl" style="color: #005eff;"></i></a>
+            <a href="Libro.html"><i class="fa-duotone fa-solid fa-house-user fa-2xl" style="--fa-primary-color: #005eff; --fa-secondary-color: #000000;"></i></a>
+            <a href="Capítulo 7.html"><i class="fa-solid fa-person-walking fa-2xl" style="color: #005eff;"></i></a>
+        </nav>
+    </footer>
+</body>
+</html>
