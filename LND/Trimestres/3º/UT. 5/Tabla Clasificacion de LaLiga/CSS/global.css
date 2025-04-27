@@ -1,0 +1,13 @@
+/* Variables fonts. */ 
+:root{
+    /* Familys. */
+    --font-family-titles: 'Rubik', 'Sans-serif', 'Poppins', 'Serif', 'Arial';
+    --font-family-general: 'Open Sans', 'Sans-serif', 'Poppins', 'Serif', 'Arial'.;
+    
+    /* Sizes. */
+    --font-size-title: 1.7rem;
+    --font-size-general: 1.1rem;
+
+    /* Colors. */
+    --color: #121212;
+}
