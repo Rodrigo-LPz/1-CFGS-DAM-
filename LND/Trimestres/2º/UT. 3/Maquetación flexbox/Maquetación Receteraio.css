@@ -1,0 +1,142 @@
+/*Establece el estilo general del cuerpo de la página*/
+body{
+    /*Elimina los márgenes predeterminados del navegador*/
+    margin: 0;
+    /*Elimina el relleno predeterminado*/
+    padding: 0;
+    /*Define las fuentes a utilizar, con una fuente cursiva como opción principal*/
+    font-family: "Great Vibes", "Dancing Script", "Allura", "Pacifico", "sans-serif", "cursive", "serif", "monospace", "arial";
+    /*Establece un color de fondo suave para la página*/
+    background-color: #e4dedd;
+}
+/*Establece el estilo del encabezado de la página*/
+header{
+    /*Color de fondo rojo para el encabezado*/
+    background-color: #B22222;
+    /*El texto del encabezado será blanco*/
+    color: white;
+    /*Espaciado interior del encabezado*/
+    padding: 20px;
+    /*Alinea el texto al centro*/
+    text-align: center;
+    /*Usa flexbox para organizar los elementos*/
+    display: flex;
+    /*Distribuye los elementos a los lados del encabezado*/
+    justify-content: space-between;
+    /*Centra los elementos verticalmente*/
+    align-items: center;
+    /*Establece una altura de 200px para el encabezado*/
+    height: 200px;
+} header img{ /*Establece el estilo de las imágenes dentro del encabezado de la página*/
+    /*La imagen ocupará un máximo del 100% de su contenedor*/
+    max-width: 100%;
+    /*Establece una altura fija para la imagen*/
+    height: 242px;
+    /*Elimina los márgenes alrededor de la imagen*/
+    margin: 0;
+} header ul{ /*Establece el estilo de la lista dentro del encabezado de la página*/
+    /*Elimina los puntos de la lista*/
+    list-style: none;
+    /*Elimina el relleno*/
+    padding: 0;
+    /*Elimina los márgenes*/
+    margin: 0;
+    /*Usa flexbox para organizar los elementos*/
+    display: flex;
+    /*Centra los elementos de la lista*/
+    justify-content: center;
+} header li{ /*Establece el estilo de los elementos de la lista dentro del encabezado de la página*/
+    /*Añade un margen izquierdo entre los elementos de la lista*/
+    margin-left: 15px;
+} header a{ /*Establece el estilo de los enlaces dentro del encabezado de la página*/
+    /*Hace que el texto del enlace sea negrita*/
+    font-weight: bold;
+}
+/*Establece el estilo para cada sección dentro del contenido principal*/
+main{
+    /*Añade un relleno alrededor del contenido principal*/
+    padding: 2%;
+    /*Añade un margen en la parte inferior*/
+    margin-bottom: 5%;
+} main section{ /*Establece el estilo para cada sección dentro del contenido principal*/
+    /*Añade un margen inferior a cada sección*/
+    margin-bottom: 5%;
+}
+main #Inicio{ /*Establece el estilo para la sección con id "Inicio" dentro del contenido principal*/
+    /*Centra el texto dentro de esta sección*/
+    text-align: center;
+    /*Añade un margen alrededor de la sección*/
+    margin: 20px;
+}
+main #Recetas{ /*Establece el estilo para la sección con id "Recetas" dentro del contenido principal*/
+    /*Usa flexbox para organizar los artículos de las recetas*/
+    display: flex;
+    /*Centra los artículos de recetas*/
+    justify-content: center;
+    /*Añade un relleno alrededor de la sección*/
+    padding: 20px;
+} #Recetas article{ /*Establece el estilo para cada artículo dentro de la sección "Recetas" dentro del contenido principal*/
+    /*Añade márgenes izquierdo y derecho entre los artículos*/
+    margin: 0 15px;
+    /*Añade un margen inferior a cada artículo*/
+    margin-bottom: 20px;
+    /*Establece el color de fondo de los artículos a blanco*/
+    background-color: white;
+    /*Añade un borde rojo alrededor de cada artículo*/
+    border: 2px solid #B22222;
+    /*Redondea las esquinas del borde*/
+    border-radius: 10px;
+    /*Centra el texto dentro del artículo*/
+    text-align: center;
+    /*Añade un relleno dentro de cada artículo*/
+    padding: 15px;
+    /*Establece un ancho máximo de 400px para los artículos*/
+    max-width: 400px;
+    /*Añade una sombra gris alrededor de cada artículo*/
+    box-shadow: 0px 40px 15px darkgray;
+} #Recetas img{ /*Establece el estilo para las imágenes dentro de los artículos de "Recetas" dentro del contenido principal*/
+    /*Hace que las imágenes se vean de manera más nítida*/
+    image-rendering: auto;
+    /*La imagen ocupará un máximo del 100% de su contenedor*/
+    max-width: 100%;
+    /*Redondea las esquinas de la imagen*/
+    border-radius: 10px;
+    /*Establece una altura fija para las imágenes*/
+    height: 250px;
+}
+/*Establece el estilo para el pie de página*/
+footer{
+    /*Color de fondo rojo para el pie de página*/
+    background-color: #B22222;
+    /*El texto del pie de página será blanco*/
+    color: white;
+    /*Centra el texto en el pie de página*/
+    text-align: center;
+    /*Añade un relleno alrededor del pie de página*/
+    padding: 10px 20px;
+    /*Usa flexbox para organizar los elementos*/
+    display: flex;
+    /*Distribuye los elementos a los lados del pie de página*/
+    justify-content: space-between;
+    /*Centra los elementos verticalmente*/
+    align-items: center;
+} footer a{ /*Establece el estilo para los enlaces dentro del pie de página*/
+    /*Añade margen izquierdo a los enlaces*/
+    margin-left: 10px;
+    /*Añade margen derecho a los enlaces*/
+    margin-right: 10px;
+}
+/*Establece el estilo general para los enlaces*/
+a{
+    /*Elimina el subrayado de los enlaces*/
+    text-decoration: none;
+    /*Los enlaces tendrán color blanco*/
+    color: white;
+} a:hover{ /*Establece el estilo para los enlaces cuando el usuario pasa el ratón por encima*/
+    /*Cambia el color del enlace a verde cuando se pasa el ratón por encima*/
+    color: #006400;
+    /*Añade un subrayado al enlace cuando se pasa el ratón por encima*/
+    text-decoration: underline;
+    /*Añade una transición suave para el cambio de color*/
+    transition: color 0.5s ease;
+}

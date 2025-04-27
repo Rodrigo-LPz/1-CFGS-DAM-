@@ -1,0 +1,68 @@
+body {
+  /*Pone un color al fondo completo de la página, en este caso, steelblue = azul acero*/
+  background: steelblue;
+  /*Pone un color al título de la página: "Tablero de ajedrez" en #eee = blanco roto*/
+  color: #eee;
+  /*Pone una tipografía al título, estilo "sans-serif"*/
+  font-family: sans-serif;
+  /*Pone el título alineado respecto a la página, posición centro*/
+  text-align: center;
+}
+/*Refiere a la etiqueta de tablero*/
+#tablero {
+  /*Pone un margen superior respecto a la página*/
+  margin-top: 50px;
+  /*Pone una imagen como un subfondo, un fonfo dentro/encima de otro, url = tabla de madera*/
+  background: url(http://img.freepik.com/free-photo/wooden-texture_1160-686.jpg?size=338&amp;ext=jpg);
+  /*Pone una sombra debajo del tablero con un tamaño y color fijos, black = negro*/
+  box-shadow: 0 10px 10px -6px rgba(0, 0, 0, .6);
+  /*Pone un borde redondeado/curvo a la imagen de la url, al tablero*/
+  border-radius: 3px;
+  /*Pone un límite para que los bordes entre celdas no colapsen y así el tablero pueda verse independientemente del dispositivo que se estén usando*/
+  border-collapse: collapse;
+  /*Pone una altura fija a la imagen, al tablero*/
+  height: 400px;
+  /*Pone un ancho fijo a la imagen, al tablero*/
+  width: 400px;
+  /*Pone y posiciona la imagen respecto a un contenedor/clase con una posición diferente a "static", absolute = absoluto*/
+  position: absolute;
+    /*Pone una altura fija respecto a la celda en la que se encuentra la imagen, tablero*/
+    top: 30px;
+    /*Pone una espaciado a la derecha fijo respecto a la celda en la que se encuentra la imagen, tablero*/
+    right: 0;
+    /*Pone una altura, por abajo, fija respecto a la celda en la que se encuentra la imagen, tablero*/
+    bottom: 0;
+    /*Pone una espaciado a la izquierda fijo respecto a la celda en la que se encuentra la imagen, tablero*/
+    left: 0;
+  /*Pone la imagen/elemento, el tablero de forma centralizada respecto a la celda correspondiente de manera automática*/
+  margin: auto;
+}
+/*Refiere al hijo-padre del padre de la etiqueta tablero*/
+#tablero div div {
+  /*Pone un color, negro, a los elementos que se encuentran dentro del segundo div (nietos), a las piezas*/
+  color: #222;
+  /*Pone los elementos que se encuentran dentro del segundo div (nietos) en el lado izquierdo, permitiendo que otros elementos fluyan a su alrededor en el espacio restante*/
+  float: left;
+  /*Pone un tamaño fijo a los elementos que se encuentran dentro del segundo div (nietos), a las piezas*/
+  font-size: 36px;
+  /*Pone una sombra debajo a los elementos que se encuentren dentro del segundo div (nietos), a las piezas; con un tamaño y color fijos, rgba(255, 255, 255, .6) = blaanco opaco o semitransparente*/
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, .6);
+  /*Pone un ancho fijo a los elementos que se encuentran dentro del segundo div (nietos), a las piezas*/
+  width: 50px;
+  /*Pone una altura fija a los elementos que se encuentran dentro del segundo div (nietos), a las piezas*/
+  height: 50px;
+}
+/*Aplica estilos a elementos que cumplen con un patrón específico dentro del contenedor, tablero; odd para los elementos impares y even para los pares. Esta fila línea es para las columnas pares, filas impares*/
+#tablero div:nth-child(odd) div:nth-child(even),
+/*Aplica estilos a elementos que cumplen con un patrón específico dentro del contenedor, tablero; odd para los elementos impares y even para los pares. Esta fila línea es para las columnas impares, filas pares*/
+#tablero div:nth-child(even) div:nth-child(odd) {
+  /*Pone un color, negro, a los elementos que se encuentran dentro del div (padre), a las casillas*/
+  background: rgba(0, 0, 0, .4);
+}
+/*Aplica estilos a elementos que cumplen con un patrón específico dentro del contenedor y que se encuentran a partir del 6º hijo del primer div (padre), n+6 = "n" contador que empieza desde 0 y el "6" punto de partida para acomenzar a aplicar los elementos*/
+#tablero div:nth-child(n+6) div {
+  /*Pone un color, blanco, a los elementos que se encuentran dentro del div (padre) y a partir del 6º hijo, a las piezas*/
+  color: #fff;
+  /*Pone un color, negro, a los elementos que se encuentran dentro del div (padre) y a partir del 6º hijo, a las piezas*/
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+}

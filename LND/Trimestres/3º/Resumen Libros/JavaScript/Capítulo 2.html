@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/Capítulos.css">
+    <title>Capítulo 2 - JS</title>
+    <link rel="icon" href="Imágenes/Logo JavaScript.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header>
+        <a href="Capítulo 1.html"><i class="fa-solid fa-arrow-left fa-2xl" style="color: #000000;"></i></a>
+        <a class="Titulo" href="Libro.html"><h1>Capítulo 2</h1></a>
+        <a href="Capítulo 3.html"><i class="fa-solid fa-arrow-right fa-2xl" style="color: #000000;"></i></a>
+    </header>
+    <main>
+        <h2>Capítulo 2 - Sintaxis básica</h2>
+        <ol>
+            <li><a href="#Contextualización">Contextualización</a></li>
+            <li><a href="#Sintaxis">Sintaxis</a></li>
+            <li><a href="#Diferenciación y versión">Diferenciación y versión</a></li>
+        </ol>
+        <section class="Resumen">
+            <p id="Contextualización"><strong>Inciso:</strong> Esta obra trata/trabaja bajo la especificación o versión <strong>ES6 (ECMAScript 2015)</strong>.<br><br>Como cualquier otro programa de lenguaje, la orientación de su desarrollo se basará en <strong>scripts</strong> que representarán instrucciones, secuencias, funciones, llamadas al sistema... Cada uno <strong>separado por el distintivo punto y coma (;).</strong></p>
+                <pre>
+                    sentencia1;
+                    ...
+                    sentencia2;
+                </pre>
+                    <li><strong>Valores: representan datos y/u objetos</strong>. Corresponden a un tipo concreto de <strong>operador</strong>, <strong>primitivo</strong> [entero (numéros/ico), cadena de caracteres (texto), decimal, booleano (sentencias de verdadero o falso), etc.] o <strong>no primitivo</strong> (estructuras que agrupan en listas u objetos, dando lugar a variables y/o constantes).</li>
+            <p id="Sintaxis">A pesar de que JavaScript permite o reconoce el final de una línea como el propio cierre de esta sin la necesidad de la expresión (;), <strong>es muy recomendable finalizarlas con dicho distintivo</strong> para evitar futuros errores de compilación.<br><br>Previamente debemos entender que las sentencias se componen de:
+                <ul>
+                    <li><strong>Valores: representan datos y/u objetos</strong>. Corresponden a un tipo concreto de <strong>operador</strong>, <strong>primitivo</strong> [entero (numéros/ico), cadena de caracteres (texto), decimal, booleano (sentencias de verdadero o falso), etc.] o <strong>no primitivo</strong> (estructuras que agrupan en listas u objetos, dando lugar a variables y/o constantes).</li>
+                    <li><strong>Variables (o constantes):</strong> podría resumirse como la <strong>concatenación de valores</strong> mediante <strong>operadores lógicos</strong> [suma (+), resta (-), multiplicación (*) o división (/)] para dar lugar a nuevas expresiones con nuevos valores.</li>
+                        <pre>
+                            "¡Hola" + "Mundo!";
+                            ...
+                            2 + 3;
+                        </pre>
+                    <li><strong>Operadores:</strong> nombrados anteriormente, los más utilizados por JavaScript son los <strong>primitivos, no primitivos y lógicos</strong>.</li>
+                    <li><strong>Palabras clave:</strong> son <strong>atributos</strong> que utiliza JavaScript <strong>para definir</strong> acciones sobre los valores y variables.<br><a class="Enlace" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords" target="_blank"> Lista completa de todas las palabras clave/reservadas y su función de JavaScript.</a></li>
+                        <pre>
+                            /* El atributo "let" indica la creación de, en este caso, la variable de nombre 'x'.*/
+                            let x;
+                        </pre>
+                </ul>
+            </p>
+            <p id="Diferenciación y versión">Por último, debemos hacer alusión a la <strong>documentación del código</strong>, y por tanto a los comentarios, estos pueden ser <strong>escritos en una única línea</strong>, mediante el uso de la expresión de doble barra (//); o, <strong>en dos o más líneas</strong> con el contenido entre barras y asteriscos (/* */).</p>
+                <pre>   
+                    // Esto es un comentario de una línea.
+                    
+                    --------------------------------------
+                    
+                    /* Esto es
+                        un comentario de dos o
+                        o más líneas
+                    */
+
+                    --------------------------------------
+
+
+                    Ejemplo práctico de un comentario en un código:
+
+                        /*
+                            Declramos las variables
+                                Primero la variable "x".
+                                Después la variable "y".
+                        */
+                        let x; // Se declara la variable "x".
+                        let y; // Se declara la variable "y".
+                </pre>
+        </section>
+    </main>
+    <footer>
+        <nav class="Cierre">
+            <a href="Capítulo 1.html"><i class="fa-solid fa-person-walking fa-flip-horizontal fa-2xl" style="color: #005eff;"></i></a>
+            <a href="Libro.html"><i class="fa-duotone fa-solid fa-house-user fa-2xl" style="--fa-primary-color: #005eff; --fa-secondary-color: #000000;"></i></a>
+            <a href="Capítulo 3.html"><i class="fa-solid fa-person-walking fa-2xl" style="color: #005eff;"></i></a>
+        </nav>
+    </footer>
+</body>
+</html>
