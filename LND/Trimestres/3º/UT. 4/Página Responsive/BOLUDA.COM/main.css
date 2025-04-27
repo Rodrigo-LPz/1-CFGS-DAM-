@@ -1,0 +1,200 @@
+/*Estilos para el "main"*/
+
+
+/*Aplica al "main"*/
+main{
+    /*Margen*/
+    margin: 0 auto;
+    display: flex;
+    /*Aplica/Muestra los elementos "flex"*/
+    flex-direction: column;
+    /*Centra los elementos*/
+    align-items: center;
+    /*Centra los elementos en el eje principal*/
+    justify-items: center;
+    /*Ancho*/
+    width: 100%;
+}
+/*Aplica a "info"*/
+.info{
+    /*Ancho*/
+    width: 100%;
+    /*Ancho máximo*/
+    max-width: 600px;
+    /*Margen*/
+    margin: 10px auto;
+    /*Relleno*/
+    padding: 20px;
+    /*Texto centrado */
+    justify-items: center;
+}
+/*Aplica a los encabezados de "info"*/
+.info h1{
+    /*Color*/
+    color: #bab3a6;
+    /*Tamaño texto*/
+    font-size: 30px;
+    /*Margen*/
+    margin-bottom: 20px;
+    /*Tamaño ancho*/
+    font-weight: 400;
+    /*Tamaño de entre línea*/
+    line-height: 1.2;
+}
+/*Aplica a los párrafos de "info"*/
+.info p{
+    /*Color*/
+    color: #898174;
+    /*Texto centrado*/
+    text-align: center; 
+    /*Tamaño*/
+    font-size: 17px;
+    /*Margen*/
+    margin: 20px 0px;
+    /*Tamaño de entre línea*/
+    line-height: 1.625;   
+}
+/*Aplica a los enlaces de "info"*/
+.info a{
+    /*Color*/
+    color: #ded6c9;
+    /*Color de fondo*/
+    background-color: #243e4c;
+    /*Elimina la decoración predeterminada*/
+    text-decoration: none;
+    /*Tamaño texto*/
+    font-size: 18px;
+    /*Tamaño ancho*/
+    font-weight: 600;
+    /*Espacio entre letras*/
+    letter-spacing: 1px;
+    /*Relleno*/
+    padding: 18px 50px;
+    /*Borde redondeado*/
+    border-radius: 30px;
+}
+/*Aplica a "destacados"*/
+.destacados{
+    /*Aplica/Muestra los elementos "grid"*/
+    display: grid;
+    /*Crear plantillas/"celdas" con "grid",*/
+    grid-template: "cel1 cel2 cel3 cel4" 1fr / 1fr 1fr 1fr 1fr;
+    /*Crear plantillas/"celdas" con "grid", pero las columnas*/
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    /*Centra los navegadores*/
+    align-items: center;
+    /*Crea un espacio alrededor del contenido*/
+    justify-content: space-around;
+    /*Margen*/
+    margin: 20px 0px;
+    /*Ancho*/
+    width: 100%;
+    /*Mínimo de ancho*/
+    max-width: 1140px;
+    /*Relleno*/
+    padding: 10px 0px;
+    /*Espacio entre columnas*/
+    column-gap: 30px;
+}
+/*Aplica a "destacado"*/
+.destacado{
+    /*Color*/
+    color: #647f8f;
+    /*Texto centrado*/
+    text-align: center;
+    /*Tamaño texto*/
+    font-size: 17px;
+    /*Ancho*/
+    width: 100%;
+    /*Tmaño ancho*/
+    font-weight: 400;
+    /*Tamaño de entre línea*/
+    line-height: 1.625;
+}
+/*Aplica a "tarjetas"*/
+.tarjetas{
+    /*Ancho*/
+    width: 100%;
+    /*Añade una altura*/
+    max-width: 1140px;
+    /*Espacio entre celdas*/
+    gap: 30px;
+    /*Centra el contenido*/
+    justify-content: center;
+    /*Aplica/Muestra los elementos "grid"*/
+    display: grid;
+    /*Crear plantillas/"celdas" con "grid"*/
+    grid-template:
+        "cel1 cel2  cel3  cel4"     150px   /*Altura de los celdas (imagenes)*/
+        "cel5 cel6  cel7  cel8"     200px   /*Altura de los celdas (cabecera)*/
+        "cel9 cel10 cel11 cel12"    1fr/    /*Altura de los celdas (párrafos)*/
+        1fr   1fr   1fr   1fr;              /*Anchura de las celdas*/
+}
+/*Aplica a "tarjeta"*/
+.tarjeta{
+    /*Eliminar la decoración o estilo predeterminado*/
+    text-decoration: none;
+    /*Texto centrado*/
+    justify-items: center;
+    /*Altura*/
+    height: 400px;
+    /*Relleno*/
+    padding: 20px;
+    /*Borde*/
+    border: 1px solid #a19f9a;
+    /*Borde redondeado*/
+    border-radius: 5px;
+}
+/*Aplica animación al pasar el cursor por encima del contenido de "info a"*/
+.info a:hover{
+    /*Color*/
+    color: #bab3a6;
+    /*Color de fondo*/
+    background-color: #1c678d;
+}
+/*Aplica animación al pasar el cursor por encima del contenido de "tarjeta"*/
+.tarjeta:hover{
+    /*Borde*/
+    border: 1px solid #1c678d;
+}
+/*Aplica a las imágenes de las trajetas*/
+.tarjeta img{
+    /*Altura*/
+    height: auto;
+    /*Ancho*/
+    width: 100%;
+    /*Ajusta el tamaño de la imagen para que se ajuste al contenedor sin deformarse*/
+    object-fit: contain;
+}
+/*Aplica a los encabezadosde de las tarjetas*/
+.tarjeta h3{
+    /*Altura mínima*/
+    min-height: 50px;
+    /*Color*/
+    color: #658193;
+    /*Texto centrado*/
+    text-align: center;
+    /*Texto negrita*/
+    font-weight: bold;
+    /*Tamaño minimo*/
+    min-height: 50px;
+    /*Tamaño texto*/
+    font-size: 20px;
+    /*Margen*/
+    margin: 20px 0px;
+    /*Tamaño de entre línea*/
+    line-height: 1.2;
+}
+/*Aplica a los párrafos de las tarjetas*/
+.tarjeta p{
+    /*Color*/
+    color: #6d685f;
+    /*Texto centrado*/
+    text-align: center;
+    /*Tamaño texto*/
+    font-size: 14px;
+    /*Tamaño altura*/
+    font-weight: 400;
+    /*Tamaño de entre línea*/
+    line-height: 1.5;
+}

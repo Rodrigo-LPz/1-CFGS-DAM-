@@ -1,0 +1,65 @@
+/*Reconfiguración de la página (media-queries) para pantallas más pequeñas*/
+
+
+/*Aplica a la configuración del css si la pantalla es igual o menor a 1110px de ancho*/
+@media (max-width: 1110px){
+    /*Aplica a "tarjetas"*/
+    .tarjetas{
+        /*Crear plantillas/"celdas" con "grid"*/
+        grid-template:
+        "cel1 cel2 cel3" 1fr  /*Altura de los celdas*/
+        "cel4 cel5 cel6" 1fr; /*Altura de los celdas*/
+    }
+}
+/*Aplica a la configuración del css si la pantalla es igual o menor a 990px de ancho*/
+@media (max-width: 990px){
+    /*Aplica a "destacados"*/
+    .destacados{
+        /*Crear plantillas/"celdas" con "grid"*/
+        grid-template: 
+        "cel1 cel2" 1fr     /*Altura de los celdas*/
+        "cel3 cel4" 1fr;    /*Altura de los celdas*/
+    }
+}
+/*Aplica a la configuración del css si la pantalla es igual o menor a 825px de ancho*/
+@media (max-width: 825px){
+    /*Aplica a "tarjetas"*/
+    .tarjetas{
+        grid-template: 
+        "cel1 cel2" 1fr     /*Altura de los celdas*/
+        "cel3 cel4" 1fr;    /*Altura de los celdas*/
+    }
+}
+/*Aplica a la configuración del css si la pantalla es igual o menor a 760px de ancho*/
+@media (max-width: 760px){
+    /*Aplica a "header"*/
+    header{
+        height: 104px;
+    }
+    /*Aplica al navegadr*/
+    nav{
+    /*Aplica/Muestra los elementos "flex"*/
+    flex-direction: column;
+    }
+}
+/*Aplica a la configuración del css si la pantalla es igual o menor a 600px de ancho*/
+@media (max-width: 600px){
+    /*Aplica a "tarjetas"*/
+    .tarjetas{
+        /*Crear plantillas/"celdas" con "grid"*/
+        grid-template: 
+        "cel1"  1fr     /*Altura de los celdas*/
+        "cel2"  1fr     /*Altura de los celdas*/
+        "cel3"  1fr     /*Altura de los celdas*/
+        "cel4"  1fr;    /*Altura de los celdas*/
+    }
+    /*Aplica a "destacados"*/
+    .destacados{
+        /*Crear plantillas/"celdas" con "grid"*/
+        grid-template: 
+        "cel1"  1fr     /*Altura de los celdas*/
+        "cel2"  1fr     /*Altura de los celdas*/
+        "cel3"  1fr     /*Altura de los celdas*/
+        "cel4"  1fr;    /*Altura de los celdas*/
+    }
+}
