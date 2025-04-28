@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.dropdownmenu{
+    margin: 5px;
+}
+.dropdownmenu ul{
+    list-style-type: none;
+}
+.dropdownmenu ul li{
+    float: left;
+    position: relative;
+    width:auto;
+}
+.dropdownmenu a{
+    background-color: orchid;
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: block;
+    font: bold 12px 20px 'Courier New', Courier, monospace;
+}
+.dropdownmenu a:hover{
+    background-color: black;
+}
+#submenu{
+    position: absolute;
+    left: 0px;
+}
+#submenu li{
+    float: none;
+    width: 100%;
+}
+.dropdownmenu li:hover #submenu{
+    display: block;
+}

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(203, 241, 241);
+    height: 70px;
+}
+nav{
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-right: 1%;
+}
+ul{
+    list-style-type: none;
+    float: right;
+}
+ul li{
+    display: inline;
+    margin: 5px
+}
+ul li a{
+    text-decoration: none;
+    background-color: lightsalmon;
+    border: 2px solid darkgrey;
+    padding: 15px 10px;
+    line-height: 70px;
+}
+ul li a:hover{
+    color: olivedrab;
+    background-color: black;
+    border: 15px ;
+}

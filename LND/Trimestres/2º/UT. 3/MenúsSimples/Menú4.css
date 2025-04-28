@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    margin-top: 10px;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    position: relative;
+    float: left;
+}
+nav ul li{
+    float: left;
+    width: 150px;
+    text-align: center;
+}
+nav li:hover{
+    background-color: rgb(44, 168, 148);
+}
+nav li a{
+    text-decoration: none;
+    color: rgb(190, 14, 176);
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    padding: 15px 20px;
+}
+nav ul ul{
+    display: none;
+    position: absolute;
+    width: 200px;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul ul li{
+    width: 200px;
+}
+nav ul ul li a{
+    font-size: 20px;
+}
+nav ul ul ul{
+    top: 0px;
+    left: 100%;
+}
+nav ul ul ul li a{
+    font-size: 15px;
+}
+nav ul ul ul ul li a{
+    font-size: 10px;
+}
