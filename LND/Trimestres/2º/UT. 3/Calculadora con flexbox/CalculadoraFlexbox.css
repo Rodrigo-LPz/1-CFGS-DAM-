@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} h1{
+    text-align: center;
+} #calculadora{
+    border: solid 4px black;
+    width: 50vw;
+        min-width: 200px;
+        max-width: 800px;
+    height: 60vh;
+        min-height: 240px;
+        max-height: 540px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+} #pantalla{
+    flex-grow: 1;
+    border: solid 1px black;
+    margin: 4px;
+    background-color: lightblue;
+} #teclado{
+    flex-grow: 4;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+} .fila{
+    flex: 1;
+    display: flex;
+}/*Estilo para las teclas*/ .fila div{
+    border: solid 1px grey;
+    margin: 2px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', 'Courier', 'monospace';
+    font-size: larger;
+    font-weight: bold;
+}
