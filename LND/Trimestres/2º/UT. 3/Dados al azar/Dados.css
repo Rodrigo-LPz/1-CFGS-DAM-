@@ -1,0 +1,84 @@
+/*Reseteo y reinicio de márgenes y bordes para la página completa*/
+*{
+    margin: 0; /*Elimina los márgenes por defecto*/
+    padding: 0; /*Elimina el relleno por defecto*/
+    box-sizing: border-box; /* Incluye el padding y border en el ancho y alto de la página*/
+}
+/*Estilo general para el contenedor de toda la página*/
+body{
+    font-family: sans-serif; /*Añade una fuente/estilo al texto*/
+}
+/*Estilo específico para el contenido del encabezado "h1"*/
+h1{
+    text-align: center; /*Posiciona y redirige hacia el centro*/
+    padding: 10px; /*Añade un margen de "10px" alrededor del contenido*/
+}
+/*Estilo para la "Caja"*/
+.Caja{
+    display: flex; /*Manda a la "Caja" a comportarse como un contenedor donde se debe de ajustar y adaptar de forma flexible al espacio*/
+    flex-wrap: wrap; /*Respeta los márgenes y tamaños de la "Caja" impidiendo desbordamiento añadiendo líneas y Reajustando el tamaño de las mismas*/
+    justify-content: center; /*Posiciona y redirige hacia el centro horizontalmente*/
+}
+/*Estilo para todas aquellas clases que comiencen por "Cara-"*/
+[class^="Cara-"]{
+    width: 120px; /*Añade un ancho*/
+    height: 120px; /*Añade una altura*/
+    padding: 10px; /*Añade un relleno*/
+    margin: 1em; /*Añade un margen (em replica el tamaño del elemento/contenedor padre. 1em = tamaño de la fuente igual al de la fuente actual. 2em = el doble de tamaño al de la fuente actual)*/
+    border-radius: 15%; /*Añade un borde redondeado*/
+    box-shadow: 7px 7px 10px rgb(167, 201, 233); /*Añade una sombra*/
+    background-color: rgba(43, 114, 180, 0.788); /*Añade un color de fondo*/
+    display: flex; /*Manda a la "Car" a comportarse como un contenedor donde se debe de ajustar y adaptar de forma flexible al espacio*/
+}
+/*Estilo para el "Punto"*/
+.Punto{
+    width: 20px; /*Añade un ancho*/
+    height: 20px; /*Añade una altura*/
+    border-radius: 50%; /*Añade un borde redondeado*/
+    background-color: ghostwhite; /*Añade un color de fondo*/
+}
+/*Estilo para la "Cara-1"*/
+.Cara-1{
+    justify-content: center; /*Posiciona y redirige hacia el centro horizontalmente*/
+    align-items: center; /*Posiciona y redirige hacia el centro verticalmente*/
+}
+/*Estilo para la "Cara-2"*/
+.Cara-2{
+    justify-content: space-between; /*Distribuye equitativamente añadiendo y separando espacio entre los elementos del contenedor*/
+} .Cara-2 .Punto:nth-child(2){ /*En vez de trabajar en el contenedor "Cara-2", con esto, trabajamos únicamente sobre el segundo hijo del punto, sobre el segundo "Punto", de este mismo contenedor*/
+    align-self: end; /*Alinea el elemento al final del contenedor*/
+}
+/*Estilo para la "Cara-3"*/
+.Cara-3{
+    justify-content: space-between; /*Distribuye equitativamente añadiendo y separando espacio entre los elementos del contenedor*/
+} .Cara-3 .Punto:nth-child(2){ /*En vez de trabajar en el contenedor "Cara-3", con esto, trabajamos únicamente sobre el segundo hijo del punto, sobre el segundo "Punto", de este mismo contenedor*/
+    align-self: center; /*Alinea un elemento específico (independientemente de la disposición de los demás elementos) en el centro del contenedor*/
+} .Cara-3 .Punto:nth-child(3){ /*En vez de trabajar en el contenedor "Cara-3", con esto, trabajamos únicamente sobre el terecr hijo del punto, sobre el tercer "Punto", de este mismo contenedor*/
+    align-self: end; /*Alinea un elemento específico (independientemente de la disposición de los demás elementos) al final del contenedor*/
+}
+/*Estilo para la "Cara-4"*/
+.Cara-4{
+    justify-content: space-between; /*Distribuye equitativamente añadiendo y separando espacio entre los elementos del contenedor*/
+} .Cara-4 .Columna{ /*Estilo para la "Columna" de la "Cara-4"*/
+    display: flex; /*Manda a la "Caja" a comportarse como un contenedor donde se debe de ajustar y adaptar de forma flexible al espacio*/
+    flex-direction: column; /*Alinea verticalmente*/
+    justify-content: space-between; /*Distribuye equitativamente añadiendo y separando espacio entre los elementos del contenedor*/
+}
+/*Estilo para la "Cara-5"*/
+.Cara-5{
+    justify-content: space-between; /*Distribuye equitativamente añadiendo y separando espacio entre los elementos del contenedor*/
+} .Cara-5 .Columna{ /*Estilo para la "Columna" de la "Cara-5"*/
+    display: flex; /*Manda a la "Caja" a comportarse como un contenedor donde se debe de ajustar y adaptar de forma flexible al espacio*/
+    flex-direction: column; /*Alinea verticalmente*/
+    justify-content: space-between; /*Distribuye equitativamente añadiendo y separando espacio entre los elementos del contenedor*/
+} .Cara-5 .Punto{ /*En vez de trabajar en el contenedor "Cara-2", con esto, trabajamos únicamente sobre el segundo punto de este mismo contenedor*/
+    align-self: center; /*Alinea un elemento específico (independientemente de la disposición de los demás elementos) en el centro del contenedor*/
+}
+/*Estilo para la "Cara-6"*/
+.Cara-6{
+    justify-content: space-between; /*Distribuye equitativamente añadiendo y separando espacio entre los elementos del contenedor*/
+} .Cara-6 .Columna{ /*Estilo para la "Columna" de la "Cara-6"*/
+    display: flex; /*Manda a la "Caja" a comportarse como un contenedor donde se debe de ajustar y adaptar de forma flexible al espacio*/
+    flex-direction: column; /*Alinea verticalmente*/
+    justify-content: space-between; /*Distribuye equitativamente añadiendo y separando espacio entre los elementos del contenedor*/
+}
