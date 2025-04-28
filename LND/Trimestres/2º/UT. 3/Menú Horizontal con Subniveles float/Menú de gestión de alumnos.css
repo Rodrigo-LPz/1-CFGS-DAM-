@@ -1,0 +1,96 @@
+/*Reseteo/Reinicio de los márgenes y paddings para todos los elementos de la página*/
+*{
+    /*Elimina el margen*/
+    margin: 0;
+    /*Elimina el relleno*/
+    padding: 0;
+}
+/*Estilo del contenedor del menú de navegación*/
+nav {
+    /*Márgenes del menú con ordenación de relo: 1º arriba, 2º derecha, 3º abajo y 4º izquierda*/
+    margin: 0px 0px 0px 0px;
+    /*Ancho a los bloques/celdas situados dentro del navegador, del nav*/
+    width: 100%;
+    /*Altura a los bloques/celdas situados dentro del navegador, del nav*/
+    height: 60px;
+    /*Color de Fondo*/
+    background-color: lightpink;
+}
+/*Estilo para el contenido  de las listas (<ul>)*/
+ul {
+    /*Eliminar las viñetas/estilo*/
+    list-style-type: none;
+}
+/*Estilo para el contenido escrito en las listas, para los los elementos dentro o de lista (<li>)*/
+li {
+    /*Color de Fondo*/
+    background-color: lightpink;
+    /*Ancho fijo*/
+    width: 200px;
+    /*Altura fija*/
+    height: 60px;
+    /*Posicionamiento de las listas respecto al padre*/
+    position: relative;
+    /*Alinea los elementos principales de las listas de forma horizontal*/
+    float: left;
+}
+/*Estilo interactivo impuesto sobre los elementos situados en la lista al pasar el cursos por encima*/
+a {
+    /*Aparición de los elementos, del texto*/
+    display: block;
+    /*Altura fija*/
+    height: 100%;
+    /*Quitar el subrayado/estilo predeterminado de los enlaces*/
+    text-decoration: none;
+    /*Centralización del tetxo respecto a la celda en donde se encuentra*/
+    text-align: center;
+    /*Color de texto*/
+    color: rgb(190, 14, 176);
+    /*Estilos del contenido escrito, del texto; tipografía/estilografía*/
+    font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    /*Estilo tipográfico en negrita*/
+    font-weight: 700;
+    /*Tamaño fijo del texto*/
+    font-size: 20px;
+    /*Altura fija de la que partir al escribir como punto más alto de la línea para espaciar*/
+    line-height: 60px;
+}
+/*Estilo específico sobre el posicionamiento de los elementos situados dentro de las listas situadas dentro del nav*/
+nav li {
+    /*Posicionamiento de los submenús*/
+    position: relative;
+    /*Alinea los elementos principales del menú de forma horizontal*/
+    float: left;
+}
+/*Estilo interactivo impuesto sobre los elementos situados en la lista al pasar el cursos por encima*/
+li:hover {
+    /*Color de Fondo*/
+    background-color: aqua;
+}
+/*Acción de mostrar el submenú cuando el cursor pasa sobre el elemento padre, lista en este caso*/
+nav li:hover>ul {
+    /*Aparición de los elementos, de la interación al pasar el cursor sobre las listas*/
+    display: block;
+}
+/*Estilo para submenús de segundo nivel, es decir, para los elementos situados dentro de las listas*/
+nav li > ul {
+    /*Ocultamiento inicial sobre o de los submenús, de las listas situadas dentro de las listas*/
+    display: none;
+    /*Posición relativa al contenedor principal o posición original*/
+    position: absolute;
+    /*Alineación del elemento respecto al padre, desde izquierda*/
+    left: 0%;
+    /*Se posiciona/coloca debajo del elemento padre*/
+    top: 100%;
+}
+/*Estilo para submenús de tercer nivel, es decir, para los elementos de las listas hijas de las listas padre*/
+nav ul ul ul {
+    /*Ocultamiento inicial sobre o de los submenús hijos de los submenús padres, de las listas situadas dentro de las listas*/
+    display: none;
+    /*Posición relativa al submenú padre*/
+    position: absolute;
+    /*Alineación del elemento respecto al padre, desde izquierda*/
+    left: 100%;
+    /*Alineación vertical respecto al submenú hijo del submenú padre*/
+    top: 0px;
+}
