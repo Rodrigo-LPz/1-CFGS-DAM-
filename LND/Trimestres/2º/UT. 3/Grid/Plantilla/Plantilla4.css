@@ -1,0 +1,44 @@
+/*Reseteo y reinicio de márgenes y bordes para la página completa*/
+*{
+    margin: 0; /*Elimina los márgenes por defecto*/
+    padding: 0; /*Elimina el relleno por defecto*/
+    box-sizing: border-box; /* Incluye el padding y border en el ancho y alto de la página*/
+}
+/*Estilo aplicado al "body"*/
+body{
+    height: 100vh; /*Altura*/
+    display: grid; /*Aparición de los elementos con "grid"*/
+    grid-template: /*Crear plantillas/"celdas" con ""grid"*/
+        "header" 1fr / /*Alturas del header*/
+        1fr; /*Anchura de las ccolumnas*/
+    gap: 10px; /*Espacio entre celdas*/
+} h1{ /*Estilo aplicado al "h1"*/
+    margin: 25px;
+    text-align: center; /*Centrar texto*/
+    font-family: "roboto", "sans-serif", "arial"; /*Añade una fuente/estilo al texto*/
+    color: black; /*Color*/
+}
+/*Estilo aplicado al "header"*/
+header{
+    grid-area: header; /*Llamado de la plantilla "header"*/
+    display: grid; /*Aparición de los elementos con "grid"*/
+    grid-template: /*Crear plantillas/"celdas" con ""grid"*/
+        "Izquierdo Derecho" 1fr / /*Altura de los celdas*/
+         1fr       3fr; /*Anchra para cada celda*/
+    gap: 10px; /*Espacio entre celdas*/
+}
+/*Estilo aplicado al primer hijo del "section"*/
+section:nth-child(1){
+    grid-area: Izquierdo; /*Llamado de la plantilla "Izquierdo", hijo 1 de la plantilla "main"*/
+    background-color: red; /*Color de fondo*/
+}
+/*Estilo aplicado al segundo hijo del "section"*/
+section:nth-child(2){
+    grid-area: Derecho; /*Llamado de la plantilla "Central", hijo 2 de la plantilla "main"*/
+    background-color: yellow; /*Color de fondo*/
+}a{ /*Estilo aplicado al "a"*/
+    margin: 25px; /*Margen*/
+    text-align: center; /*Centrar texto*/
+    text-decoration: none; /*Quitar estilo predefinido enlace*/
+    color: black; /*Color*/
+}

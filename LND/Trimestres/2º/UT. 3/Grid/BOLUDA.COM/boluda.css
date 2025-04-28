@@ -1,0 +1,45 @@
+/*Estilos estéticos de la página*/
+
+
+/*Fuentes*/
+@font-face {
+    /*Tipografía*/
+    font-family: 'Montserrat';
+    /*Estilo de letra*/
+    font-style: normal;
+    /*Tamaño de letra*/
+    font-weight: 400;
+    /*Fuentes de Internet*/
+    src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+    /*Carácteres de Internet*/
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/*Ajustes globales*/
+*{
+    /*Elimina el margen*/
+    margin: 0px;
+    /*Elimina el relleno*/
+    padding: 0px;
+}
+/*Cuerpo*/
+body{ 
+    /*Color de fondo*/
+    background-color: #060606;
+    /*Tipografía*/
+    font-family: "Montserrat", "sans-serif";
+    /*Ancho mínimo*/
+    min-width: 480px;
+    /*Aplica/Muestra los elementos "grid"*/
+    display: grid;
+    /*Crea la plantilla/celdas con grid*/  
+    grid-template: 
+        "body01" auto   /*Altura columna 1*/
+        "body02" auto   /*Altura columna 2*/
+        "body03" auto / /*Altura columna 3*/
+        1fr;            /*Ancho de las columnas*/
+    text-align: center;
+}
+/*Define las áreas de la cuadrícula*/
+header {grid-area: body01;} /*Define el área del "header"*/
+main   {grid-area: body02;} /*Define el área del "main"*/
+footer {grid-area: body03;} /*Define el área del "footer"*/

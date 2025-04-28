@@ -1,0 +1,19 @@
+*{
+    margin: 0; /*Elimina los márgenes por defecto*/
+    padding: 0; /*Elimina el relleno por defecto*/
+    box-sizing: border-box; /* Incluye el padding y border en el ancho y alto de la página*/
+}
+header{
+    padding: 25px; /*relleno por defecto*/
+    text-align: center; /*Centrar texto*/
+}
+main{
+    text-align: center; /*Centrar texto*/
+}
+a{
+    text-decoration: none; /*Quitar estilo predefinido enlace*/
+    font-family: "sans-serif", "arial", "roboto"; /*Añade una fuente/estilo al texto*/
+    color: black; /*Color*/
+    margin: 20px;
+}
+
