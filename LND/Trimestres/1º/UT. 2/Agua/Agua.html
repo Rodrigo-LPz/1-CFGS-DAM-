@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La importancia del Agua.pdf</title>
+    <style>
+        #foto {
+            display: none; /* Ocultar la foto inicialmente */
+            margin-top: 10px;
+            max-width: 100%; /* Ajustar el tamaño a la pantalla */
+            height: auto;    /* Mantener la proporción */
+        }
+    </style>
+</head>
+<body>
+    <h1>Presentación agua</h1>
+    <h2>03/10/24</h2>
+    <h3>1º CFGS</h3>
+    <p>El agua es importante</p>
+    <button id="button">Mostrar foto</button>
+    <img id="foto" src="https://img.freepik.com/vector-premium/mascota-gota-agua-sosteniendo-pancarta-que-dice-gracias-diseno-estilo-lindo-camiseta-pegatina-elemento-logotipo_152558-20223.jpg" alt="La imagen muestra una gota de agua sonriente sosteniendo un letrero que dice «THANK YOU»">
+    <h6>FIN</h6>
+
+    <script>
+        // Obtener el botón y la imagen
+        const boton = document.getElementById('button');
+        const foto = document.getElementById('foto');
+
+        // Agregar un evento de clic al botón
+        boton.addEventListener('click', function() {
+            // Verificar si la foto está oculta o visible
+            if (foto.style.display === 'none') {
+                foto.style.display = 'block'; // Mostrar la foto
+                boton.textContent = 'Ocultar foto'; // Cambiar el texto del botón
+            } else {
+                foto.style.display = 'none'; // Ocultar la foto
+                boton.textContent = 'Mostrar foto'; // Cambiar el texto del botón
+            }
+        });
+    </script>
+
+</body>
+</html>
