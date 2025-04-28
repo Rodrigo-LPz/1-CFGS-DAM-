@@ -1,0 +1,122 @@
+/*Reseteo/Reinicio de los márgenes y paddings para todos los elementos de la página*/
+*{
+    /*Elimina el margen*/
+    margin: 0;
+    /*Elimina el relleno*/
+    padding: 0;
+}
+body{
+    /*Color de Fondo*/
+    background-color: black;
+}
+/*Estilo del contenedor del menú de navegación*/
+nav{
+    /*Márgenes del menú con ordenación de relo: 1º arriba, 2º derecha, 3º abajo y 4º izquierda*/
+    margin: 0px 0px 0px 0px;
+    /*Ancho a los bloques/celdas situados dentro del navegador, del nav*/
+    width: 100%;
+    /*Altura a los bloques/celdas situados dentro del navegador, del nav*/
+    height: 60px;
+}
+/*Estilo para el contenido  de las listas (<ul>)*/
+ul{
+    /*Eliminar las viñetas/estilo*/
+    list-style-type: none;
+}
+/*Estilo para el contenido escrito en las listas, para los los elementos dentro o de lista (<li>)*/
+li{
+    /*Ancho fijo*/
+    width: 200px;
+    /*Altura fija*/
+    height: 60px;
+    /*Posicionamiento de las listas respecto al padre*/
+    position: relative;
+    /*Alinea los elementos principales de las listas de forma horizontal*/
+    float: left;
+    /*Centrado de elementos*/
+    justify-content: center;
+    /*Tiempo de transición*/
+    transition: 0.3s linear;
+    /*Aparición de elementos "flex"*/
+    display: flex;
+    /*Creación de las columnas con "flex"*/
+    flex-direction: row;
+    /*Escpacio entre celdas*/
+    gap: 20px;
+}
+/*Estilo interactivo impuesto sobre los elementos situados en la lista al pasar el cursos por encima*/
+img{
+    /*Margen*/
+    margin: 10px 5px;
+    /*Ancho máximo*/
+    max-width: 100%;
+    /*Altura máxima*/
+    max-height: 100%;
+}
+/*Estilo interactivo impuesto sobre los elementos situados en la lista al pasar el cursos por encima*/
+a{
+    /*Aparición de los elementos, del texto*/
+    display: block;
+    /*Altura fija*/
+    height: 100%;
+    /*Quitar el subrayado/estilo predeterminado de los enlaces*/
+    text-decoration: none;
+    /*Centralización del tetxo respecto a la celda en donde se encuentra*/
+    text-align: center;
+    /*Color de texto*/
+    color: #f7f7f7;
+    /*Estilos del contenido escrito, del texto; tipografía/estilografía*/
+    font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    /*Estilo tipográfico en negrita*/
+    font-weight: 700;
+    /*Tamaño fijo del texto*/
+    font-size: 20px;
+    /*Altura fija de la que partir al escribir como punto más alto de la línea para espaciar*/
+    line-height: 60px;
+}
+/*Estilo interactivo impuesto sobre los elementos situados en la lista al pasar el cursos por encima*/
+a:hover{
+    /*Color*/
+    color: #00EC96;
+    /*Tamaño del texto*/
+    font-size: 25px;
+}
+/*Estilo específico sobre el posicionamiento de los elementos situados dentro de las listas situadas dentro del nav*/
+nav li{
+    /*Posicionamiento de los submenús*/
+    position: relative;
+    /*Alinea los elementos principales del menú de forma horizontal*/
+    float: left;
+}
+/*Acción de mostrar el submenú cuando el cursor pasa sobre el elemento padre, lista en este caso*/
+nav li:hover>ul{
+    /*Aparición de los elementos, de la interación al pasar el cursor sobre las listas*/
+    display: block;
+}
+/*Estilo para submenús de segundo nivel, es decir, para los elementos situados dentro de las listas*/
+nav li > ul{
+    /*Ocultamiento inicial sobre o de los submenús, de las listas situadas dentro de las listas*/
+    display: none;
+    /*Posición relativa al contenedor principal o posición original*/
+    position: absolute;
+    /*Alineación del elemento respecto al padre, desde izquierda*/
+    left: 0%;
+    /*Se posiciona/coloca debajo del elemento padre*/
+    top: 100%;
+    /*Color de fondo*/
+    background-color: #1f272f;
+    /*Borde redondeado*/
+    border-radius: 5px;
+}
+/*Estilo para submenús de tercer nivel, es decir, para los elementos de las listas hijas de las listas padre*/
+nav ul ul ul{
+    /*Ocultamiento inicial sobre o de los submenús hijos de los submenús padres, de las listas situadas dentro de las listas*/
+    display: none;
+    /*Posición relativa al submenú padre*/
+    position: absolute;
+    /*Alineación del elemento respecto al padre, desde izquierda*/
+    left: 100%;
+    /*Alineación vertical respecto al submenú hijo del submenú padre*/
+    top: 0px;
+    padding: 5px;
+}
