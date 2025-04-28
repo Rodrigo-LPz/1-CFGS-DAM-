@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro</title>
+</head>
+<body>
+  <h1>Formulario de Registro</h1>
+    <form action="/action_page.php">
+
+      <fieldset>
+      <legend><h2>Información Personal</h2></legend>
+        <label for="Nombre">Nombre:</label><br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese su nombre" required><br>
+        <br>
+        <label for="Apellidos">Apellidos:</label><br>
+        <input type="text" id="Apellidos" name="Apellidos" placeholder="Ingrese sus apellidos" required><br>
+        <br>
+        <label for="E-mail">E-mail:</label><br>
+        <input type="email" id="E-mail" name="E-mail" placeholder="Ingrese su correo electónico" required><br>
+        <br>
+        <label for="Teléfono">Teléfono:</label><br>
+        <input type="text" id="Teléfono" name="Teléfono" placeholder="Ingrese su correo electónico" pattern="[0-9]{9}" required><br>
+        <br>
+        <label for="Contraseña">Contraseña:</label><br>
+        <input type="password" id="Contraseña" name="Contraseña" placeholder="Ingrese su contraseña" required><br>
+        <br>
+        <label for="Edad">Edad:</label>
+        <input type="number" id="Edad" name="Edad" min="18" max="120" required><br>
+        <br>
+        <label for="Fecha de nacimiento">Fecha de nacimiento:</label>
+          <input type="date" id="Fecha de nacimiento"><br>
+          <br>
+          <label for="Nacionalidad">Nacionalidad:</label><br>
+          <input type="text" id="Nacionalidad" name="Nacionalidad" placeholder="Ingrese su nacionalidadd"><br>
+        <br>
+          <label for="Género">Género:</label>
+            <input id="opcion_Género1" name="Opcion" type="radio" value="opcion_Género1">
+            <label for="opcion_Género1">Masculino</label>
+            <input id="opcion_Género2" name="Opcion" type= "radio" value="opcion_Género2">
+            <label for="opcion_Género2">Femenino</label>
+            <input id="opcion_Género3" name="Opcion" type= "radio" value="opcion_Género3">
+            <label for="opcion_Género3">Otro</label>
+            <input id="opcion_Género4" name="Opcion" type= "radio" value="opcion_Género3">
+            <label for="opcion_Género4">Prefiero no contestar</label>
+      </fieldset>
+
+
+      <fieldset>
+      <legend><h2>Preferencias</h2></legend>
+        <label for="Intereses/Hobbies">Intereses/Hobbies:</label><br>
+          <input id="opcion_Intereses/Hobbies1" name="Opcion" type="checkbox" value="opcion_Intereses/Hobbies1">
+          <label for="opcion_Intereses/Hobbies1">Astronomía</label>
+          <input id="opcion_Intereses/Hobbies2" name="Opcion" type= "checkbox" value="opcion_Intereses/Hobbies2">
+          <label for="opcion_Intereses/Hobbies2">Blogging</label>
+          <input id="opcion_Intereses/Hobbies3" name="Opcion" type= "checkbox" value="opcion_Intereses/Hobbies3">
+          <label for="opcion_Intereses/Hobbies3">Cine</label>
+          <input id="opcion_Intereses/Hobbies4" name="Opcion" type="checkbox" value="opcion_Intereses/Hobbies4">
+          <label for="opcion_Intereses/Hobbies4">Deportes</label>
+          <input id="opcion_Intereses/Hobbies5" name="Opcion" type= "checkbox" value="opcion_Intereses/Hobbies5">
+          <label for="opcion_Intereses/Hobbies5">Escritura</label>
+          <input id="opcion_Intereses/Hobbies6" name="Opcion" type= "checkbox" value="opcion_Intereses/Hobbies6">
+          <label for="opcion_Intereses/Hobbies6">Jardinería</label>
+          <input id="opcion_Intereses/Hobbies7" name="Opcion" type= "checkbox" value="opcion_Intereses/Hobbies7">
+          <label for="opcion_Intereses/Hobbies7">Lectura</label>
+          <input id="opcion_Intereses/Hobbies8" name="Opcion" type= "checkbox" value="opcion_Intereses/Hobbies8">
+          <label for="opcion_Intereses/Hobbies9">Música</label>
+          <input id="opcion_Intereses/Hobbies9" name="Opcion" type= "checkbox" value="opcion_Intereses/Hobbies9">
+          <label for="opcion_Intereses/Hobbies8">Redes Sociales</label>
+          <input id="opcion_Intereses/Hobbies10" name="Opcion" type= "checkbox" value="opcion_Intereses/Hobbies10">
+          <label for="opcion_Intereses/Hobbies10">Viajes</label>
+        <br>
+        <br>
+        <label for="País de residencia">País de residencia:</label><br>
+          <select id="País de residencia">
+            <option value="" disabled selected>Seleccione su país de residencia</option>
+            <option value="España">Andorra</option>
+            <option value="España">España</option>
+            <option value="España">Portugal</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Colombia">Colombia</option>
+            <option value="México">México</option>
+            <option value="Perú">Perú</option>
+          </select><br><br>
+    </fieldset>
+
+
+    <fieldset>
+      <legend><h2>Dirección en Internet</h2></legend>
+        <label for="Dirección IPv4">Dirección IPv4:</label><br>    
+        <input name="Dirección IPv4" type="text" placeholder="Escribe Aquí" pattern="((^|\.)((25[0-5]_*)|(2[0-4]\d_*)|(1\d\d_*)|([1-9]?\d_*))){4}_*$" required autofocus>
+    </fieldset>
+
+
+    <fieldset>
+      <legend><h2>Información Adicional</h2></legend>
+        <label for="mensaje">Comentarios/Dudas:</label><br>
+        <textarea rows="5" cols="60" placeholder="Escribe Aquí" id="mensaje"></textarea>
+    </fieldset>
+    <br>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Reiniciar">
+    </form>
+</body>
+</html>
