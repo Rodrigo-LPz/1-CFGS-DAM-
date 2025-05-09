@@ -1,0 +1,43 @@
+/* Font - Rubik. */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* Font - Open Sans. */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+/* Variables fonts. */ 
+:root{
+    /* Familys. */
+    --font-family-titles: 'Rubik', 'Sans-serif', 'Poppins', 'Serif', 'Arial';
+    --font-family-general: 'Open Sans', 'Sans-serif', 'Poppins', 'Serif', 'Arial';
+    
+    /* Sizes. */
+    --font-size-title: 4rem;
+    --font-size-subtitle: 1.6rem;
+    --font-size-general: 1.2rem;
+
+    /* Colors. */
+    --color-header: #121212;
+    --color-main: #ffffff;
+    --color-mainTarject: #53627c;
+    --color-aHover: #ff1e42;
+}
+
+/* Background. */ 
+:root{
+    /* Colors. */
+    --color-background-header: #bf9df7;
+    --color-background-mian-page: #202636;
+    --backgound-color-whileHover: #ff1e42;
+    --backgound-color-beforeHover: #c3112d;
+    --backgound-color-country: #ff8c00;
+
+}
+
+/* Variables text. */ 
+:root{
+    /* Colors. */
+    --color-background: #bbbbbb;
+    --color-background-calculator: #f0ffff;
+}

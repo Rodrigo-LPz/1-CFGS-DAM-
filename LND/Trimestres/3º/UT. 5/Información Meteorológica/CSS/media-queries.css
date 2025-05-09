@@ -1,0 +1,97 @@
+/* Media-queries. */
+@media screen and (min-width: 1000px){
+    body{
+        padding: 30px;
+    }
+
+    .wheather-window .cities{
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 70px;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 700px){
+    body{
+        padding: 25px;
+    }
+
+    .wheather-window .cities{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 90px;
+        grid-gap: 90px 0px;
+    }
+
+    .container form{
+        margin-left: 0px
+    }
+
+    .title{
+        letter-spacing: 0.2em;
+    }
+
+    h1{
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    body{
+        padding: 25px;
+    }
+
+    .wheather-window .cities{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 0px;
+        grid-gap: 65px 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container form{
+        margin-left: 0px
+    }
+    
+    .banner form input{
+        font-size: 1.5rem;
+        height: 40px;
+        padding: 5px 0px 10px;
+        border-bottom: 1px solid;
+    }
+
+    .banner form button{
+        font-size: 0.7rem;
+        padding: 10px 20px;
+        margin-left: 25px;
+    }
+
+    .wheather-window .city{
+        position: relative;
+        width: 170px;
+        padding: 20px 5%;
+        margin: 0px 25px;
+    }
+
+    .wheather-window .city-icon{
+        width: 80px;
+        height: 80px;
+    }
+
+    .wheather-window .city-temp{
+        font-size: 3.5rem;
+        margin-top: 5px;
+    }
+
+    .wheather-window figcaption{
+        margin-top: 10px;
+    }
+
+    .title {
+        letter-spacing: 0.2em;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+}
