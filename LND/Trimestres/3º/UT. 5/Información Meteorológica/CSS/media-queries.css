@@ -48,9 +48,13 @@
         justify-content: center;
         align-items: center;
     }
-
+    
     .container form{
-        margin-left: 0px
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
     }
     
     .banner form input{
@@ -63,7 +67,7 @@
     .banner form button{
         font-size: 0.7rem;
         padding: 10px 20px;
-        margin-left: 25px;
+        margin: 25px 0px 0px 270px;
     }
 
     .wheather-window .city{
