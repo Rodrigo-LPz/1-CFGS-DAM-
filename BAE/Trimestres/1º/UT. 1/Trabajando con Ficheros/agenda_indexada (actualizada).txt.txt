@@ -1,0 +1,26 @@
+Eliminación de "Raúl González Madrid - C/Apolo, Santa Cruz de Tenerife" y la adición de un nuevo contacto: "Claudia Fernández Martín C/San Rafael Bilbao 675 62 35 89 57"
+
+agenda_apellidos_nombre.txt
+1	Aragón Zúñiga		Armando
+2	de Campos Sánchez	José María
+3	Fernández Martín	Claudia	
+4	García García		Romeo
+5	García López		Marco
+6	Guadalupe Guadalupe	Carlos
+7	López Gutiérrez		Juan Carlos
+8	López Serrano		María
+9	Sanz Pérez		Airam
+10	Tomás del Castillo	Zaira
+
+
+agenda_ciudad.txt
+1	Barcelona
+2	Cádiz
+3	Bilbao
+4	León
+5	Madrid
+6	Madrid
+7	Madrid
+8	Segovia
+9	Teruel
+10	Toledo
