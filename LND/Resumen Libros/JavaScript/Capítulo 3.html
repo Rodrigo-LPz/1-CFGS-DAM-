@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/Capítulos.css">
+    <title>Capítulo 3 - JS</title>
+    <link rel="icon" href="Imágenes/Logo JavaScript.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header>
+        <a href="Capítulo 2.html"><i class="fa-solid fa-arrow-left fa-2xl" style="color: #000000;"></i></a>
+        <a class="Titulo" href="Libro.html"><h1>Capítulo 3</h1></a>
+        <a href="Capítulo 4.html"><i class="fa-solid fa-arrow-right fa-2xl" style="color: #000000;"></i></a>
+    </header>
+    <main>
+        <h2>Capítulo 3 - Variables y constantes</h2>
+        <ol>
+            <li><a href="#Llamada de archivos">Llamada de archivos</a></li>
+            <li><a href="#Variables">Variables</a></li>
+            <li><a href="#Constantes">Constantes</a></li>
+        </ol>
+        <section class="Resumen">
+            <p id="Llamada de archivos">Al igual que otros lenguajes de programación orientados a objetos u OOP (Object-Oriented Programming), <strong>JavaScript trabaja con variables y constantes</strong>, ambas empleadas en el almacenamiento y registro de datos; las variables podrán alterar/modificar su valor a lo largo de la ejecución del programa y las constantes no.<br><br>Para hacer uso de estas herramientas deberemos declarar un archivo con extensión ".js" dentro de la misma carpeta que la de la página web, que la del ".html" principal, generalmente con el nombre "index.html". Dentro de este, al igual que declarábamos la llamada al archivo ".css", también lo haremos para el archivo ".js":</p>
+                <pre>
+                    Llamada a archivos ".css"
+
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="es"&gt;
+                        &lt;head&gt;
+    
+                            ...
+    
+                            &lt;link rel="stylesheet" href="prueba.css"&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+    
+                            ...
+    
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                </pre>
+                <pre>
+                    Llamada a archivos ".js"
+
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="es"&gt;
+                        &lt;head&gt;
+    
+                            ...
+    
+                            &lt;script src="prueba.js"&gt;&lt;/script&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+    
+                            ...
+    
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                </pre>
+            <p id="Variables">Una variable es un <strong>espacio en la memoria donde se guardan/almacenan información</strong>, tipo y valor. Su distinción se realiza en base a un <strong>identificador propio</strong> para cada una, el nombre.<br><br>Dichos nombres únicamente pueden estar formados por letras, dígitos o los símbolos dollar ($) y barra baja (_), así como también, el primer carácter no puede ser un dígito. Tampoco pueden ser nombrados por palabras reservadas (let).<br><br>De igual forma, nombrar a una variable, aún con el mismo nombre, empezando por mayúscula o minúscula, no será la misma.<br><br>En JavaScript la declaración de variables se realiza de la siguiente manera:</p>
+                <pre>
+                    let identificador/nombre;
+
+                    Otra forma de declarar variables es mediante la palabra reservada "var", aunque no es muy
+                    recomendable su uso, pues puede generar problemas en la ejecución del código, además de
+                    estar destinada para navegadores antiguos.
+                    
+                    Ejemplo práctico de declaración de variables:
+
+                        // Formas incorrectas:
+                            let 1suma;
+                            let let;
+
+                        // Formas correctas:
+                            let suma;
+                            let Suma
+                            let $suma;
+                            let _suma;
+                </pre>
+            <p>Tras declarar la variable, podemos o bien dejarla así o bien asignarle/declararle un valor:</p>
+                <pre>
+                    let identificador = valor;
+
+                    Ejemplo práctico de asignación de valor a una variable:
+
+                        let Saluso = "¡Hola mundo!";
+                        let nombre = Rodrigo;
+                        let numero = 14;
+                    
+                    De igual forma, la declaración de variables puede ser realizada en una única línea:
+
+                        let Saludo = "¡Hola mundo!", nombre = Rodrigo, numero = 14;
+
+                    Partiendo del último caso, si la línea quedase muy larga podríamos declararla de la siguiente forma:
+
+                        let Saludo = "¡Hola mundo!",
+                            nombre = Rodrigo,
+                            numero = 14;
+                </pre>
+                <p>Respecto a la <strong>nomenclatura</strong> del nombre, usted podrá utilizar la que desee o le sea de mayor conveniencia. No obstante, la nomenclatura o sistema de nombramiento por convención y el más utilizado es el <strong>camel case</strong>, según dicha sistematizacion, la variable comenzaría por minuscula y las siguientes iniciales de palabra por mayúscula:</p>
+                <pre>
+                    let saludoParaTodoElMundo = "¡Hola mundo!";
+                </pre>
+            <p>Su nombre viene dado por las pequeñas variaciones o cambios dados en el nombre de la variable entre las mayúsculas y minusculas, esto a modo de joroba, y por tanto, <strong>"camel case" = "caso camello"</strong>.</p>
+            <p>Volviendo a la <strong>asignación de valores</strong> y, dado que no es obligatorio, si quisieramos mostrar el valor de una variable la cúal no ha sido declarada o asiganada a uno, el resultado a mostrar por el navegador sería el siguiente:</p>
+                <pre>
+                    let Saludo;
+                    alert.(Saludo);
+                </pre>
+            <img src="Imágenes/Demostración3.png" alt="Demostración">
+            <p>Puesto que <strong>JavaScript es un lenguaje ampliamente permisible</strong>, se recomienda encarecidamente el uso de la siguiente directiva como primera línea del archivo:</p>
+                <pre>
+                    "use strict";
+                </pre>
+            <p>Esto a fines de que JavaScript active el <strong>modo estricto</strong> y pase a tener un comportamiento mucho más estricto. De esta forma, no se permitiran casos como la asignación de valores a variables no declaradas y, en general evitará malas prácticas.</p>
+            <a class="Enlace" href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Strict_mode" target="_blank">Lista completa de todas las implicaciones que importa la directiva "use strict"</a>
+                <pre>
+                    Ejemplo práctico sin el uso de la directiva "use strict":
+                        let Saludo;
+                        Saluda = "¡Hola mundo!";
+                        alert.(Saludo);
+                </pre>
+            <img src="Imágenes/Demostración3.png" alt="Demostración">
+            <p>Si usasemos la directiva <strong>"use strict"</strong> nos ahorraríamos disgustos, tiempo y energía en encontrar un simple error qué, muchas veces será casi imperceptible para el programador.</p>
+                <pre>
+                    Ejemplo práctico con la directiva "use strict":
+                        "use strict";
+
+                        let Saludo;
+                        Saluda = "¡Hola mundo!";
+                        alert.(Saludo);
+                </pre>
+                <img src="Imágenes/Demostración3.1.png" alt="Demostración">
+            <p>Por último, es importante comentar la permisibilidad de JavaScript como <strong>lenguaje dinámico</strong>. Esto implica que una variable podrá <strong>contener un valor independientemente de su tipo y el momento</strong>.</p>
+                <pre>
+                    let Saludo = "¡Hola mundo!";
+                    Saludo = 14;
+                    Saludo = true;
+                    Saludo = null;
+                    Saludo = undefined;
+                </pre>
+                <img src="Imágenes/Demostración3.2.png" alt="Demostración">
+            <p>Por el contrario, lo que no se podrá hacer será declarar la misma variable en más de una ocasión para dos o más valores.</p>
+                <pre>
+                    let Saludo = "¡Hola mundo!";
+                    let Saludo = 14;
+                </pre>
+                <img src="Imágenes/Demostración3.3.png" alt="Demostración">
+            <p id="Constantes">Respecto a las constantes, estas <strong>comparten características y funcionalidades junto a las variables</strong>, pues también <strong>son espacios de memoria</strong>. Sin embargo, lo que las hace diferentes de las variables es su <strong>propiedad de ser inmutables</strong>, es decir, por su imposibilidad para cambiar o variar el valor original o inicialmente asignado. Haciendo que a diferencia de las variables, los valores de las constantes deban ser asignados al momento de su creación. Su declaración se dará mediante la palabra reservada <strong>"const"</strong>.</p>
+                <pre>
+                    const identificador = valor;
+
+                    Ejemplo práctico erróneo de declaración de constantes:
+
+                        const numeroEpsilon;
+                        numeroEpsilon = 2.7182;
+
+                    Ejemplo práctico correcto de declaración de constantes:
+
+                        const numeroEpsilon = 2.7182;
+                </pre>
+            <p>Así como ya hablamos de la nomenclatura de las variables, las constantes vuelven a doblegarse a la preferencia del programador. No obstante, su nombramiento convencial consta del uso de barra baja (_) entre palabra y el uso constante de mayúsculas:</p>
+                <pre>
+                    const NUMERO_EPSILON = 2.7182;
+                </pre>
+            <p>De vuelta a la asiganción de valores, al igual que en las variables, las constantes no permiten ser declaradas en más de una ocasión para dos o más valores:</p>
+                <pre>
+                    const numeroEpsilon = 2.71;
+                    const numeroEpsilon = 2.7182;
+                </pre>
+        </section>
+    </main>
+    <footer>
+        <nav class="Cierre">
+            <a href="Capítulo 2.html"><i class="fa-solid fa-person-walking fa-flip-horizontal fa-2xl" style="color: #005eff;"></i></a>
+            <a href="Libro.html"><i class="fa-duotone fa-solid fa-house-user fa-2xl" style="--fa-primary-color: #005eff; --fa-secondary-color: #000000;"></i></a>
+            <a href="Capítulo 4.html"><i class="fa-solid fa-person-walking fa-2xl" style="color: #005eff;"></i></a>
+        </nav>
+    </footer>
+</body>
+</html>

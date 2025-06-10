@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    max-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template:
+    "header" auto
+    "body" auto
+    "footer" auto /
+    1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px 60px 0px;
+}
+
+main{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px 0px 25px 0px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+ol{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 250px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+    width: 85%;
+    max-width: 1024px;
+    gap: 25px;
+}
+
+pre{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    border-left: 5px solid black;
+}
+
+.Resumen{
+    width: 85%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 100px;
+}
+
+footer{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0px;
+}
+
+.Cierre{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+h1, h2, a{
+    font-weight: bold;
+    color: black;
+}
+
+h1{
+    font-size: 2.5em;
+    text-decoration: underline;
+    font-family: "Brush Script MT", cursive;
+}
+
+h2{
+    font-size: 2.7em;
+    margin: 20px 0px 100px 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.Titulo{
+    text-decoration: overline underline double;
+}
+
+.Enlace{
+    text-decoration: underline;
+}
+
+img{
+    width: 100%;
+    max-width: 1024px;
+    height: 100%;
+}
