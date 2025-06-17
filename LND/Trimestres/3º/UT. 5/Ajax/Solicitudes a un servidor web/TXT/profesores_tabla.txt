@@ -1,0 +1,10 @@
+<table>
+    <tr><th>Profesor/a</th><th>Módulo</th></tr>
+    <tr><td>Alejandro López</td><td>Sistemas informáticos</td></tr>
+    <tr><td>Cristina Osuna</td><td>Empresa e iniciativa emprendedora</td></tr>
+    <tr><td>David Vicente Rodríguez</td><td>Entornos de desarrollo</td></tr>
+    <tr><td>Helena Peña</td><td>Programación</td></tr>
+    <tr><td>Emilio Gómez</td><td>Digitalización</td></tr>
+    <tr><td>Javier Sebastián</td><td>Bases de datos</td></tr>
+    <tr><td>Javier Sebastián</td><td>Lenguajes de marcas y sistemas de gestión de información</td></tr>
+</table>

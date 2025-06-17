@@ -1,0 +1,35 @@
+{
+    "persons" : [
+        {
+            "name" : "Jhon",
+            "age" : "31",
+            "studys" : "ESO",
+            "_pets" : " Para variables con más de un objeto a almacenar invocamos los arrays con los corchetes. Barra baja indica ccomentario. ",
+            "pets" : [
+                {"type" : "dog", "name" : "Fido"},
+                {"type" : "cat", "name" : "Felix"},
+                {"type" : "hamster", "name" : "Lightning"}
+            ]
+        },
+        {
+            "name" : "Javier",
+            "age" : "50",
+            "studys" : "FP - CFGM",
+            "_pets" : " Para variables con más de un objeto a almacenar invocamos los arrays con los corchetes. Barra baja indica ccomentario. ",
+            "pets" : [
+                {"type" : "dog", "name" : "Lulu"},
+                {"type" : "cat", "name" : "Misifu"}
+            ]
+        },
+        {
+            "name" : "Maria",
+            "age" : "20",
+            "studys" : "FP - CFGM",
+            "_pets" : " Para variables con más de un objeto a almacenar invocamos los arrays con los corchetes. Barra baja indica ccomentario. ",
+            "pets" : [
+                {"type" : "dog", "name" : "Lulu"},
+                {"type" : "cat", "name" : "Misifu"}
+            ]
+        }
+    ]
+}
