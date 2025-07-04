@@ -1,0 +1,101 @@
+footer {
+    background-color: var(--color-footer-background);
+    color: var(--color-secondary);
+    padding: 50px 20px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-evenly;
+    font-size: var(--texto-footer);
+    font-family: var(--fuente-principal);
+}
+
+/* títulos del footer */
+
+footer h3 {
+    font-family: var(--fuente-titulos);
+    font-weight: 200;
+    font-size: 20px;
+}
+
+/* enlaces del footer */
+
+footer a {
+    color: var(--color-secondary);
+}
+
+/* divs del footer */
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: auto;
+}
+
+/* mapa */
+
+footer > div > iframe {
+    height: 150px;
+    width: 100%;
+}
+
+/* listas */
+
+footer ul {
+    list-style: none;
+}
+
+/* lista de contacto1 */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* lista social */
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+footer > div > nav {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* iconos */
+
+footer i {
+    font-size: 20px;
+}
+
+/* imagen gobierno de canarias */
+
+footer img {
+    max-width: 180px;
+}
+
+.f-div-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Centrar parte del segundo div (luego se cambia en los MQ) */
+
+.f-div-2 > h3, .f-div-2 > nav > p {
+    text-align: center;
+}
+
+.sinlinea {
+    text-decoration: none;
+}

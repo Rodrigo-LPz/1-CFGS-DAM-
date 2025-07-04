@@ -1,0 +1,44 @@
+@media (max-width: 920px){
+     /* Menú hamburguesa */
+  .header-nav {
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    position: absolute;
+    top: 52px;
+    left: 10px;
+    z-index: 1000;
+  }
+
+  .menu li {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 8px 0;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Mostrar menú cuando el checkbox está marcado */
+  #menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+}
+
+@media (max-width: 600px){
+  
+}

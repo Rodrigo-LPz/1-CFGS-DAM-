@@ -1,0 +1,166 @@
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h1 {
+    font-family: var(--fuente-titulos);
+    font-size: 50px;
+    margin-top: 100px;
+    color: rgb(151, 140, 140);
+    filter: brightness(1.5);
+    font-family: var(--fuente-principal);
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: blur(10px);
+    top: 0;
+    margin-bottom: 30px;
+}
+
+
+.title-p {
+    max-width: 900px;
+    text-align: center;
+    position: relative;
+    bottom: 8%;
+    margin: 70px 0px 120px;
+    color: var(--color-secondary);
+    font-size: 24px;
+    font-family: var(--fuente-principal);
+}
+
+.content-details {
+    position: relative;
+    bottom: 20%;
+    font-size: 20px;
+    font-family: var(--fuente-titulos);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    margin-top: 50px;
+}
+
+
+details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+  width: 100%;
+  text-align: center;
+  
+  
+}
+
+.det-p {
+    font-size: 20px;
+    font-family: var(--fuente-principal);
+    width: 100%;
+    color: var(--color-secondary);
+    font-weight: 900;
+    
+
+}
+
+details .title1 {
+    background-color: rgb(187, 241, 187);
+}
+details .title2 {
+    background-color: rgb(187, 210, 241);
+}
+details .title3 {
+    background-color: rgb(252, 168, 162);
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+  
+}
+
+
+
+details[open] {
+  padding: 0.5em;
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(0, 0, 0);
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-container {
+    perspective: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.flip-checkbox {
+    display: none;
+}
+
+.flip-card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+    position: relative;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-checkbox:checked + .flip-card .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.flip-card-front {
+    background-color: #2980b9;
+}
+
+.flip-card-back {
+    background-color: #2c3e50;
+    transform: rotateY(180deg);
+}
+
+.flip-card-label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}

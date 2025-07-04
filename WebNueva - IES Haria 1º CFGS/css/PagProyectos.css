@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: var(--spacing-mg);
+}
+
+h1{
+    width: 100%;
+    max-width: 1200px;
+    font-size: 2.2rem;
+    font-family: var(--fuente-titulos);
+    margin: 70px auto 0px auto;
+}
+.Competiciones{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+
+h2{
+    width: 100%;
+    font-size: 1.7em;
+    font-family: var(--fuente-titulos);
+    margin: 50px auto 50px auto;
+}
+
+.tarjetaAz, .tarjetaAm{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 25px;
+}
+
+.tarjetaAz{
+    background-color: #0033A0; /* Color azul claro: #A7C6ED. */
+}
+
+.tarjetaAm{
+    background-color: #FFCC00; /* Color amarillo un poco más claro: #FFD700 || Color amarillo claro: #FFE680. */
+}
+
+img{
+    height: 70px;
+    width: 100px
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3{
+    width: 100%;
+    font-size: 1.5em;
+    font-family: var(--fuente-titulos);
+    margin: 0px auto 15px auto;
+}
+
+p{
+    font-size: 1.2em;
+    width: 350px;
+    text-align: justify;
+}

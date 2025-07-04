@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  /* Colores */
+  --color-primary: #ff0000;
+  --color-secondary: #fff;
+  --color-background: #f9f9f9;
+  --color-header-background: rgb(73, 73, 73);
+  --color-header-text: rgb(255, 255, 255);
+  --color-header-text-hover: rgb(255, 119, 119);
+  --color-footer-background: rgb(73, 73, 73);
+  --color-footer-text: #fff;
+
+
+  /* Fuentes */
+  --fuente-principal: "Poppins", Arial, Helvetica, sans-serif;
+  --fuente-titulos: "Bebas Neue", sans-serif;
+
+  /* Tamaño */
+  --texto-header: 1.2rem;
+  --texto-footer: 13px;
+
+  /* Espacios */
+  --spacing-mp: 0.5rem;  /* Muy pequeño: 8px */
+  --spacing-p: 1rem;     /* Pequeño: 16px */
+  --spacing-m: 1.5rem;   /* Mediano: 24px */
+  --spacing-g: 2rem;     /* Grande: 32px */
+  --spacing-mg: 3rem;    /* Muy grande: 48px */
+
+  /* Bordes redondeados */
+  --border-radius-p: 5px; /* Pequeño */
+  --border-radius-m: 8px; /* Mediano */
+  --border-radius-g: 20px; /* Grande */
+  --border-radius-mg: 50%; /* Circular */
+
+  /* Transiciones */
+  --transition-rapido: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-despacio: 0.8s ease;
+}

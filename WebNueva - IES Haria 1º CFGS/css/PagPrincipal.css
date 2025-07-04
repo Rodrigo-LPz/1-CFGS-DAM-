@@ -1,0 +1,250 @@
+main {
+  font-family: var(--fuente-principal);
+}
+
+/* SECCIÓN VIDEO */
+.principal {
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.video-principal {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Video de fondo a pantalla completa */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Capa oscura sobre el video para mejorar legibilidad */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.overlay > h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-family: var(--fuente-principal);
+  color: var(--color-secondary);
+  font-size: 2rem;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Contenedor para textos animados secundarios */
+.texto-bienvenida-p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 60px;
+}
+
+/* Textos animados secundarios */
+.texto-bienvenida-p > span {
+  font-family: var(--fuente-titulos);
+  color: var(--color-secondary);
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: absolute;
+  opacity: 0;
+  animation: aparecer 22.5s infinite;
+  animation-fill-mode: forwards;
+  -webkit-animation: aparecer 22.5s infinite;
+}
+
+/* Retrasos para cada texto secundario */
+.texto-bienvenida-p > span:nth-child(2) {
+  animation-delay: 2.5s;
+}
+.texto-bienvenida-p > span:nth-child(3) {
+  animation-delay: 5s;
+}
+.texto-bienvenida-p > span:nth-child(4) {
+  animation-delay: 7.5s;
+}
+.texto-bienvenida-p > span:nth-child(5) {
+  animation-delay: 10s;
+}
+.texto-bienvenida-p > span:nth-child(6) {
+  animation-delay: 12.5s;
+}
+.texto-bienvenida-p > span:nth-child(7) {
+  animation-delay: 15s;
+}
+.texto-bienvenida-p > span:nth-child(8) {
+  animation-delay: 17.5s;
+}
+.texto-bienvenida-p > span:nth-child(9) {
+  animation-delay: 20s;
+}
+
+/* Animación de aparición y desaparición */
+@keyframes aparecer {
+  0%,
+  18% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  20%,
+  30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  30%,
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+section {
+  padding: 70px 10px;
+  width: 100%;
+  color: var(--color-footer-background);
+}
+
+.ciclos {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: auto 300px;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.dual > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.dual > article > h2 {
+  align-self: center;
+}
+
+.dual > article > p {
+  text-align: center;
+  margin: 20px;
+}
+
+.dual {
+  color: var(--color-footer-text);
+  background-color: var(--color-footer-background);
+}
+
+.ciclos > article > a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  padding: 20px;
+  color: var(--color-footer-text);
+  font-size: 50px;
+  text-shadow: 10px 10px 10px black;
+}
+
+.ciclos > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  -moz-transition: transform 0.1s linear;
+  -ms-transition: transform 0.1s linear;
+  -o-transition: transform 0.1s linear;
+}
+
+.back:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+.ciclos > article > a > p {
+  display: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.ciclos > article > a:hover > p {
+  display: inline;
+}
+
+.ciclos > article > a:hover > h2 {
+  display: none;
+}
+
+.titulo-ciclos {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  font-size: 50px;
+  font-family: var(--fuente-titulos);
+}
+
+.ciclos-b {
+  border: 5px solid var(--color-footer-background);
+  grid-column: 1;
+  grid-row: 2;
+  transition: transform 0.3s ease-in-out;
+  background-image: url("../assets/ciclos/CFGB.jpg");
+  background-size: 150%;
+}
+
+.ciclos-m {
+  border: 5px solid var(--color-footer-background);
+  grid-column: 2;
+  grid-row: 2;
+  transition: transform 0.3s ease-in-out;
+  background-image: url("../assets/ciclos/CFGM.jpg");
+  background-size: 150%;
+}
+
+.ciclos-s {
+  border: 5px solid var(--color-footer-background);
+  grid-column: 3;
+  grid-row: 2;
+  transition: transform 0.3s ease-in-out;
+  background-image: url("../assets/ciclos/CFGS.jpg");
+  background-size: 150%;
+}
+
+.back a {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.back a:hover {
+  background-color: rgba(0, 0, 0, 0.55);
+}

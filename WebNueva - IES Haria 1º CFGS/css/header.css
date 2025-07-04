@@ -1,0 +1,94 @@
+header {
+  background-color: var(--color-header-background);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: var(--texto-header);
+  font-family: var(--fuente-titulos);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+}
+
+/* Estilos del menú */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  padding: var(--spacing-p);
+  background-color: var(--color-claro);
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-header-text);
+  gap: 10px;
+  font-size: 1.5rem;
+}
+
+.logo img {
+  width: 70px;
+  height: 50px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: var(--color-header-text);
+}
+
+.menu li a:hover {
+  color: var(--color-header-text-hover);
+}
+
+/* Control del menú hamburguesa (Móvil y tablets)*/
+#menu-toggle {
+  display: none; /* Por defecto oculto */
+}
+
+/* Icono del menú hamburguesa */
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: var(--spacing-mp);
+  color: var(--color-header-text);
+}
+
+/* Estilo del menú desplegable */
+#menu-toggle:checked + .menu-icon + .menu {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: var(--spacing-m) 0;
+  background-color: var(--color-header-background);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Elementos del menú desplegable */
+#menu-toggle:checked + .menu-icon + .menu li {
+  margin: 4px 0;
+  width: 100%;
+  text-align: center;
+}
+/* Enlaces en el menú desplegable */
+#menu-toggle:checked + .menu-icon + .menu li a {
+  border: 0px solid transparent;
+  padding: var(--spacing-p);
+  display: block;
+}
