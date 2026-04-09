@@ -1,0 +1,128 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--colorFondoMain);
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5% 2.5% 5%;
+}
+
+.busqueda h2{
+    background-color: #F9FCFD;
+}
+
+.busqueda h2{
+    padding: 30px 0;
+    margin-bottom: 20px;
+    color: var(--colorTexto);
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.busqueda p{
+    color: var(--colorTexto);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+}
+
+.busqueda form{
+    display: flex;
+}
+
+input[type="search"]{
+    padding: .5rem;
+    color: var(--colorInput);
+    border: 1px solid var(--colorBordeInput);;
+    border-radius: 3px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+input[type="submit"]{
+    border-radius: 3px;
+    background: var(--colorFondoBoton);
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+section.tarjetas{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 10px 10px 10px;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    margin: 0 auto;
+}
+
+article.tarjeta{
+    max-width: 680px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 1rem 0px 0px;
+    margin: 0 auto;
+}
+
+article.tarjeta:hover{
+    transition: all 0.3s ease-in-out;
+}
+
+.tarjeta:hover{
+    transform: scale(var(--escala));
+}
+
+.tarjeta a {
+    color: #4169e1;
+}
+
+.tarjeta a:hover{
+    color: #2249bd;
+}
+
+.tarjeta img {
+    height: 200px;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 100%;
+    border-style: none;
+}
+
+.tarjeta h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.tarjeta .Entradas{
+    display: block;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+.navegacion a{
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    line-height: 50px;
+}
+
+.navegacion a:hover{
+    font-size: var(--tamañoTextoMenuHover);
+    color: var(--colorFondoBoton);
+}

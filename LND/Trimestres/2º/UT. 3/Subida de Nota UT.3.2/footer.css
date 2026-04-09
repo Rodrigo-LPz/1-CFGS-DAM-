@@ -1,0 +1,21 @@
+footer{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    background-color: var(--colorFondoFooter);
+}
+footer div{
+    display: block;
+}
+footer p{
+    font-size: 1.1rem;
+    margin-bottom: 1.5em;
+    line-height: 1.6;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}

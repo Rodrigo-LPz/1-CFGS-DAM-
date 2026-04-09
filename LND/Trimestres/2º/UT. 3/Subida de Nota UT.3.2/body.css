@@ -1,0 +1,42 @@
+/* Variables CSS*/
+:root{
+    --tamañoTexto: 1rem;
+    --colorTexto: #404040;
+    --colorTextoBoton: #ffffff;
+
+    --colorFondoHeader: #ffffff;
+    --colorBordeHeader: #f2f2f2;
+    --tamañoTextoLogo: 1.6rem;
+    --tamañoTextoLogoHover: 1.7rem;
+    --tamañoTextoMenu: 1.1rem;
+    --tamañoTextoMenuHover: 1.2rem;
+    --tamañoLineaLogo: 60px;
+    --tamañoLineaMenu: 50px;
+    --colorFondoBoton: #4169e1;
+    --tamañoTextoHamburguesa: 1.1rem;
+    --escala: 1.05;
+
+    --colorFondoMain: #fbfdfe;
+    --colorInput: #666666;
+    --colorBordeInput: #cccccc;
+
+    --colorFondoFooter: #f2f2f2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: var(--tamañoTexto);
+    color: var(--colorTexto);
+    display: grid;
+    grid-template:
+        "header"   5000px
+        "main"     1fr
+        "footer"   30px /
+        1;
+}

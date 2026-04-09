@@ -1,0 +1,67 @@
+header{
+    display: block;
+    background-color: var(--colorFondoHeader);
+    border-bottom: 1px solid var(--colorBordeHeader);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: block;
+    font-size: 20px;
+    line-height: var(--tamañoLineaLogo);
+    margin-left: 2rem;
+}
+
+.logo a{
+    display: flex;
+    font-size: var(--tamañoTextoLogo);
+    color: var(--colorTexto);
+}
+
+.logo a:hover{
+    font-size: var(--tamañoTextoLogoHover);
+}
+
+.menu{
+    position: relative;
+    display: block;
+    list-style: none;
+    font-size: var(--tamañoTextoMenu);
+}
+
+.menu li{
+    display: inline-block;
+}
+
+nav a{
+    display: block;
+    padding: 0 20px;
+    font-size: var(--tamañoTextoMenu);
+    line-height: var(--tamañoLineaMenu);
+    color: var(--colorTexto);
+    text-decoration: none;
+}
+
+.menu a:hover{
+    font-size: var(--tamañoTextoMenuHover);
+}
+
+nav a.suscribete{
+    color: var(--colorTextoBoton);
+    background-color: var(--colorFondoBoton);
+}
+
+nav a.suscribete:hover{
+    color: var(--colorFondoBoton);
+    background-color: var(--colorFondoHeader);
+}
+
+.hamburguesa{
+    display: none;
+}
