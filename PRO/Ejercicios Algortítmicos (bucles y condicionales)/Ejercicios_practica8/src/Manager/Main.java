@@ -3,9 +3,6 @@ package Manager;
 
 // Importamos el paquete "ArrayList".
 import java.util.ArrayList;
-// Importamos el paquete "HashMap".
-import java.util.HashMap;
-// Importamos el paquete "Scanner".
 import java.util.Scanner;
 
 
@@ -41,6 +38,7 @@ public class Main{
                 // Añadimos algunas elementos, citas.
                 citaH.add(18);
             }
+            
             case 2 ->{
                 // Añadimos algunas elementos, citas.
                 citaD.add("Lanzamiento nuevo disco");
@@ -51,6 +49,7 @@ public class Main{
                 // Añadimos algunas elementos, citas.
                 citaH.add(8);
             }
+
             case 3 ->{
                 // Añadimos algunas elementos, citas.
                 citaD.add("FanFest");
@@ -61,6 +60,7 @@ public class Main{
                 // Añadimos algunas elementos, citas.
                 citaH.add(11);
             }
+
             default ->{
                 System.err.print("Error: El numero introducido no concuarda con ningun evento.");
             }

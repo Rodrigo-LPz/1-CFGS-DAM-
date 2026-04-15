@@ -1,0 +1,8 @@
+The game has:
+    1. 
+
+
+
+
+Interfaces (I_Fire, I_Lightning, I_Plant, I_Water).
+    These are used to add new attacks to the abstract "Pokemons" class without having to redeclare attributes.
