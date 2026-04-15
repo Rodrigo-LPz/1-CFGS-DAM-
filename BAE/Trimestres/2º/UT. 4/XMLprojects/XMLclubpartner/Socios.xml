@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<club>
+<nombre>club toky</nombre>
+<socios>
+	<socio id="23">
+    		<nombre>Martin Fisher</nombre>
+    		<direccion>43 bass St</direccion>
+    		<alta>12/12/2020</alta>
+	</socio>
+<socio id="21">
+    		<nombre>Max</nombre>
+    		<direccion>3 drum St</direccion>
+    		<alta>12/12/2021</alta>
+	</socio>
+<socio id="3">
+    		<nombre>Fish</nombre>
+    		<direccion>xd St</direccion>
+    		<alta>1/2/2020</alta>
+	</socio>
+</socios>
+</club>
